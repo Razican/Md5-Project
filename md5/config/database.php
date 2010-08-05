@@ -42,9 +42,9 @@ $active_group = "default";
 $active_record = TRUE;
 
 $db['default']['hostname'] = "localhost";
-$db['default']['username'] = "razican_md5raz";
-$db['default']['password'] = "2#*45Ws[u?x=eyy";
-$db['default']['database'] = "razican_md5";
+$db['default']['username'] = "root";
+$db['default']['password'] = "";
+$db['default']['database'] = "md5";
 $db['default']['dbdriver'] = "mysql";
 $db['default']['dbprefix'] = "md5_";
 $db['default']['pconnect'] = TRUE;
