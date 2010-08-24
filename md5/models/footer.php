@@ -9,10 +9,13 @@ Class Footer extends CI_Model{
 	
 	function total_hashes()
 	{
-		$query			= $this->db->get($this->db->dbprefix('decryptor'));
-		$total_hashes	= $query->num_rows();
-		
-		return $total_hashes;
+		if (!defined('INSTALL'))
+		{
+			$query			= $this->db->get($this->db->dbprefix('decryptor'));
+			$total_hashes	= $query->num_rows();
+			
+			return $total_hashes;
+		}
 	}
 }
 

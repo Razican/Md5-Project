@@ -1,7 +1,7 @@
 		<table width="720" height="30" border="0" align="center" cellspacing="0">
 			<tr align="center" valign="middle">
 				<td width="10" style="background: url(<?php echo skin_path(); ?>images/menuleft.png) no-repeat;">&nbsp;</td>
-				<td width="125" style="background: url(<?php echo skin_path(); ?>images/menucenter.png);" class="menutext"><?php echo lang('menu.version'); ?>: 2.0</td>
+				<td width="125" style="background: url(<?php echo skin_path(); ?>images/menucenter.png);" class="menutext"><?php echo lang('menu.version'); ?>: <?php echo $this->config->item('version'); ?></td>
 				<td width="115" style="background: url(<?php echo skin_path(); ?>images/menucenter.png);">
 					<div id="lang"><ul><li class="level1"><a class="level1"><?php echo lang('menu.language'); ?></a>
 						<ul>

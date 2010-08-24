@@ -19,12 +19,14 @@ class Install extends Controller {
 
 	function intro()
 	{
+		define('INSTALL', TRUE);
 		$this->lang->load('install/lang');
 		$this->load->view('install/intro');
 	}
 
 	function ins1($error = NULL)
 	{
+		define('INSTALL', TRUE);
 		$this->lang->load('install/lang');
 
 		$data['head']		= $this->load->view('install/header', "", TRUE);
@@ -38,6 +40,7 @@ class Install extends Controller {
 
 	function ins2()
 	{
+		define('INSTALL', TRUE);
 		$this->lang->load('install/lang');
 
 		$data['head']		= $this->load->view('install/header', "", TRUE);

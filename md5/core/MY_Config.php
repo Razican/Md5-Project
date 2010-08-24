@@ -26,4 +26,4 @@ class MY_Config extends CI_Config {
 // END MY_Config Class
 
 /* End of file MY_Config.php */
-/* Location: ./system/application/libraries/MY_Config.php */
+/* Location: ./application/core/MY_Config.php */

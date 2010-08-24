@@ -166,4 +166,4 @@ class MY_Lang extends CI_Lang {
 // END MY_Language Class
 
 /* End of file MY_Language.php */
-/* Location: ./system/application/libraries/MY_Language.php */
+/* Location: ./application/core/MY_Language.php */
