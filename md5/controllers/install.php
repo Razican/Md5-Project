@@ -21,7 +21,7 @@ class Install extends Controller {
 	{
 		define('INSTALL', TRUE);
 		$this->lang->load('install/lang');
-		$this->load->view('install/intro');
+		$this->load->view('intro');
 	}
 
 	function ins1($error = NULL)
@@ -35,7 +35,7 @@ class Install extends Controller {
 		$data['error']		= ($error == 1) OR ($error == 2) OR ($error == 3) OR ($error == 4) ? lang('install.error'.$error) : NULL;
 
 		$data['foot']		= $this->load->view('install/footer', "", TRUE);
-		$this->load->view('install/ins1', $data);
+		$this->load->view('ins1', $data);
 	}
 
 	function ins2()
@@ -118,9 +118,9 @@ class Install extends Controller {
 		$this->db->query($QryUpdateTable);
 
 		$data['foot']		= $this->load->view('install/footer', "", TRUE);
-		$this->load->view('install/ins2', $data);
+		$this->load->view('ins2', $data);
 	}
 }
 
 /* End of file install.php */
-/* Location: ./system/application/controllers/install.php */
+/* Location: ./application/controllers/install.php */

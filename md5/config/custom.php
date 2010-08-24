@@ -6,7 +6,7 @@ if (defined('IN_ADMIN'))
 }
 
 $config['skin']				= "Md52";
-$config['version']			= '2 PA2';
+$config['version']			= '2 PA3';
 
 $config['cookie_domain']	= "testing.md5-project.razican.com";
 
