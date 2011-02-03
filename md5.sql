@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Servidor: localhost
--- Tiempo de generación: 30-01-2011 a las 15:12:23
+-- Tiempo de generación: 03-02-2011 a las 22:07:20
 -- Versión del servidor: 5.1.49
 -- Versión de PHP: 5.3.3-1ubuntu9.3
 
@@ -16,7 +16,7 @@ SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
 /*!40101 SET NAMES utf8 */;
 
 --
--- Base de datos: `md51`
+-- Base de datos: `md5`
 --
 
 -- --------------------------------------------------------
@@ -24,7 +24,7 @@ SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
 --
 -- Estructura de tabla para la tabla `md5_decryptor`
 --
--- Creación: 30-01-2011 a las 15:10:26
+-- Creación: 03-02-2011 a las 22:03:24
 --
 
 DROP TABLE IF EXISTS `md5_decryptor`;

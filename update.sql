@@ -8,4 +8,5 @@ ALTER TABLE `md5_decryptor` ADD UNIQUE (
 `string` ,
 `hash`
 );
+ALTER DATABASE `md5` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci
 ALTER TABLE `md5_decryptor` ENGINE = InnoDB DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
