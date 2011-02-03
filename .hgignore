@@ -1,7 +1,0 @@
-syntax: glob
-*redcar*
-.DS_Store
-
-syntax: regexp
-md5/cache/(?!index\.html|\.htaccess)
-md5/logs/(?!index\.html)
