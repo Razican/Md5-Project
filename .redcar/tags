@@ -1,9 +1,0 @@
-1296420588
-ReadFromFile	/var/www/md51/includes/functions.php	function ReadFromFile(
-ShowFoot	/var/www/md51/includes/functions.php	function ShowFoot (
-ShowMenu	/var/www/md51/includes/functions.php	function ShowMenu (
-display	/var/www/md51/includes/functions.php	function display (
-doquery	/var/www/md51/includes/functions.php	function doquery(
-gettemplate	/var/www/md51/includes/functions.php	function gettemplate (
-includeLang	/var/www/md51/includes/functions.php	function includeLang (
-parsetemplate	/var/www/md51/includes/functions.php	function parsetemplate (

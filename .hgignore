@@ -1,0 +1,3 @@
+syntax: glob
+*redcar*
+.DS_Store
