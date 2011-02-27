@@ -1,6 +1,5 @@
 <?php
  
-$lang['changelog.title']		= "Lista de cambios";
 $lang['changelog.version']		= "Versión";
 $lang['changelog.description']	= "Descripción";
 

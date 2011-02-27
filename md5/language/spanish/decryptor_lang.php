@@ -1,6 +1,5 @@
 <?php
  
-$lang['decryptor.title']	= "Desencriptar Md5";
 $lang['decryptor.hash']		= "Hash Md5";
 $lang['decryptor.string']	= "Palabra";
 $lang['decryptor.action']	= "Desencriptar";

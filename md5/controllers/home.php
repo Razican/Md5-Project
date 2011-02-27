@@ -21,12 +21,10 @@ class Home extends Controller {
 			}
 		}
 */
-		$this->lang->load('home');
+		$this->lang->load('home');		
 
-		$head['page']			= 'home';
-
-		$data['head']			= $this->load->view('header', $head, TRUE);
-		$data['menu']			= $this->load->view('menu', "", TRUE);
+		$data['head']			= $this->load->view('header', '', TRUE);
+		$data['menu']			= $this->load->view('menu', '', TRUE);
 
 		$data['foot']			= $this->load->view('foot', '', TRUE);
 		$data['hidden']			= array('cmd' => '_s-xclick', 'hosted_button_id' => '8255830');
@@ -36,4 +34,4 @@ class Home extends Controller {
 }
 
 /* End of file home.php */
-/* Location: ./system/application/controllers/home.php */
+/* Location: ./application/controllers/home.php */

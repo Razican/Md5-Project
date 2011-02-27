@@ -1,6 +1,5 @@
 <?php
  
-$lang['encryptor.title']	= "Encriptar Md5";
 $lang['encryptor.string']	= "Palabra";
 $lang['encryptor.hash']		= "Hash Md5";
 $lang['encryptor.action']	= "Encriptar";

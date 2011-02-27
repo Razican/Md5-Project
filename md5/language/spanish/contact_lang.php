@@ -1,6 +1,5 @@
 <?php
  
-$lang['contact.title']			= "Contacto";
 $lang['contact.nickname']		= "Apodo";
 $lang['contact.rank']			= "Rango";
 $lang['contact.email']			= "Correo Electrónico";

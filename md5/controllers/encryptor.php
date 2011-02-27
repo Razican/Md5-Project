@@ -9,12 +9,10 @@ class Encryptor extends Controller {
 	
 	function index()
 	{
-		$this->lang->load('encryptor');
+		$this->lang->load('encryptor');		
 
-		$head['page'] = 'encryptor';
-
-		$data['head'] = $this->load->view('header', $head, TRUE);
-		$data['menu'] = $this->load->view('menu', "", TRUE);
+		$data['head'] = $this->load->view('header', '', TRUE);
+		$data['menu'] = $this->load->view('menu', '', TRUE);
 
 		$data['foot'] = $this->load->view('foot', '', TRUE);
 		$data['hidden']			= array('cmd' => '_s-xclick', 'hosted_button_id' => '8255830');
@@ -30,9 +28,8 @@ class Encryptor extends Controller {
 		}
 		$this->lang->load('encryptor');
 		$this->load->model('encrypt');
-
-		$head['page']			= 'encryptor';
-		$data['head']			= $this->load->view('header', $head, TRUE);
+		
+		$data['head']			= $this->load->view('header', '', TRUE);
 		$data['menu']			= $this->load->view('menu_encryption', "", TRUE);
 		$data['hidden']			= array('cmd' => '_s-xclick', 'hosted_button_id' => '8255830');
 		$data['string']			= $this->input->post('string');
@@ -45,4 +42,4 @@ class Encryptor extends Controller {
 }
 
 /* End of file encryptor.php */
-/* Location: ./system/application/controllers/encryptor.php */
+/* Location: ./application/controllers/encryptor.php */

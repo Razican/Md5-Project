@@ -24,10 +24,8 @@ class Admin extends Controller {
 
 					if ($this->config->item('admin_password') === $this->encrypt->decode($cookie[1]) && ($this->encrypt->decode($cookie[0]) === $this->config->item('admin_username')))
 					{
-						$head['page']	= 'admin';
-
-						/*$data['head']	= $this->load->view('adm/header', $head, TRUE);
-						$data['menu']	= $this->load->view('adm/menu', "", TRUE);
+						/*$data['head']	= $this->load->view('adm/header', '', TRUE);
+						$data['menu']	= $this->load->view('adm/menu', '', TRUE);
 
 						$this->load->view('adm/index', $data);*/
 						echo "¡Estás dentro!";
@@ -40,11 +38,8 @@ class Admin extends Controller {
 			}
 			else
 			{
-			
-				$head['page']			= 'admin';
-
-				$data['head']			= $this->load->view('header', $head, TRUE);
-				$data['menu']			= $this->load->view('menu', "", TRUE);
+				$data['head']			= $this->load->view('header', '', TRUE);
+				$data['menu']			= $this->load->view('menu', '', TRUE);
 
 				$data['foot']			= $this->load->view('foot', '', TRUE);
 				
@@ -83,4 +78,4 @@ class Admin extends Controller {
 }
 
 /* End of file admin.php */
-/* Location: ./system/application/controllers/admin.php */
+/* Location: ./application/controllers/admin.php */

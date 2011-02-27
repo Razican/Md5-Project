@@ -14,7 +14,7 @@ Class Decrypt extends CI_Model{
 		if (preg_match("([0-9a-fA-F]{32})",$hash) and (strlen($hash) === 32))
 		{
 			$table			= $this->db->dbprefix('decryptor');
-			$query			= $this->db->get_where($this->db->dbprefix('decryptor'), array('md5' => $hash), '1');
+			$query			= $this->db->get_where($this->db->dbprefix('decryptor'), array('hash' => $hash), '1');
 
 			if ($query->num_rows() === 1)
 			{

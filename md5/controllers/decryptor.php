@@ -11,10 +11,8 @@ class Decryptor extends Controller {
 	{
 		$this->lang->load('decryptor');
 
-		$head['page']			= 'decryptor';
-
-		$data['head']			= $this->load->view('header', $head, TRUE);
-		$data['menu']			= $this->load->view('menu', "", TRUE);
+		$data['head']			= $this->load->view('header', '', TRUE);
+		$data['menu']			= $this->load->view('menu', '', TRUE);
 
 		$data['foot']			= $this->load->view('foot', '', TRUE);
 		$data['hidden']			= array('cmd' => '_s-xclick', 'hosted_button_id' => '8255830');
@@ -31,9 +29,7 @@ class Decryptor extends Controller {
 		$this->lang->load('decryptor');
 		$this->load->model('decrypt');
 
-		$head['page']			= 'decryptor';
-
-		$data['head']			= $this->load->view('header', $head, TRUE);
+		$data['head']			= $this->load->view('header', '', TRUE);
 		$data['menu']			= $this->load->view('menu_decryption', "", TRUE);
 
 		$data['foot']			= $this->load->view('foot', '', TRUE);
@@ -47,4 +43,4 @@ class Decryptor extends Controller {
 }
 
 /* End of file decryptor.php */
-/* Location: ./system/application/controllers/decryptor.php */
+/* Location: ./application/controllers/decryptor.php */

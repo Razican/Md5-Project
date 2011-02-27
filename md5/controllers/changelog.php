@@ -12,10 +12,8 @@ class Changelog extends Controller {
 		$this->lang->load('changelog');
 		$this->load->helper('changelog');
 
-		$head['page']				= 'changelog';
-
-		$data['head']				= $this->load->view('header', $head, TRUE);
-		$data['menu']				= $this->load->view('menu', "", TRUE);
+		$data['head']				= $this->load->view('header', '', TRUE);
+		$data['menu']				= $this->load->view('menu', '', TRUE);
 
 		$data['foot']				= $this->load->view('foot', '', TRUE);
 		$data['hidden']				= array('cmd' => '_s-xclick', 'hosted_button_id' => '8255830');
@@ -27,4 +25,4 @@ class Changelog extends Controller {
 }
 
 /* End of file contact.php */
-/* Location: ./system/application/controllers/contact.php */
+/* Location: ./application/controllers/contact.php */

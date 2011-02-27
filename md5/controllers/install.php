@@ -9,7 +9,7 @@ class Install extends Controller {
 
 	function index()
 	{
-/*		if (file_exists(APPPATH ."config/custom".EXT))
+/*		if (file_exists(APPPATH .'config/custom'.EXT))
 		{
 			die("<html><head><title>Error!</title></head><body><p><h2><b>Por favor, elimina los siguientes archivos y carpetas:</b></h2><br /><div style=\"color: red;\">". APPPATH ."language/basque/install<br />". APPPATH ."language/english/install<br />". APPPATH ."language/spanish/install<br />". APPPATH ."controllers/install.php<br />". APPPATH ."includes/install/<br />". APPPATH ."views/install/</div></p>Por razones de seguridad, es obligatorio eliminarlos, gracias.</body></html>");
 		}
@@ -29,12 +29,12 @@ class Install extends Controller {
 		define('INSTALL', TRUE);
 		$this->lang->load('install/lang');
 
-		$data['head']		= $this->load->view('install/header', "", TRUE);
-		$data['menu']		= $this->load->view('install/menu', "", TRUE);
+		$data['head']		= $this->load->view('install/header', '', TRUE);
+		$data['menu']		= $this->load->view('install/menu', '', TRUE);
 
 		$data['error']		= ($error == 1) OR ($error == 2) OR ($error == 3) OR ($error == 4) ? lang('install.error'.$error) : NULL;
 
-		$data['foot']		= $this->load->view('install/footer', "", TRUE);
+		$data['foot']		= $this->load->view('install/footer', '', TRUE);
 		$this->load->view('ins1', $data);
 	}
 
@@ -43,19 +43,19 @@ class Install extends Controller {
 		define('INSTALL', TRUE);
 		$this->lang->load('install/lang');
 
-		$data['head']		= $this->load->view('install/header', "", TRUE);
-		$data['menu']		= $this->load->view('install/menu', "", TRUE);
+		$data['head']		= $this->load->view('install/header', '', TRUE);
+		$data['menu']		= $this->load->view('install/menu', '', TRUE);
 
 		if ((!$this->input->post('adm_user'))		OR
-			($this->input->post('adm_user') == "")	OR
+			($this->input->post('adm_user') == '')	OR
 			(!$this->input->post('host'))			OR
-			($this->input->post('host') == "")		OR
+			($this->input->post('host') == '')		OR
 			(!$this->input->post('db_user'))		OR
-			($this->input->post('db_user') == "")	OR
+			($this->input->post('db_user') == '')	OR
 			(!$this->input->post('prefix'))			OR
-			($this->input->post('prefix') == "")	OR
+			($this->input->post('prefix') == '')	OR
 			(!$this->input->post('db'))				OR
-			($this->input->post('db') == ""))
+			($this->input->post('db') == ''))
 		{
 				
 			exit(header("Location: install/ins1/4"));
@@ -72,12 +72,12 @@ class Install extends Controller {
 		$connection = @mysql_connect($host, $user, $pass);
 		if (!$connection)
 		{
-			exit(header("Location: install/ins1/1"));
+			exit(header('Location: install/ins1/1'));
 		}
 		$dbselect = @mysql_select_db($db);
 		if (!$dbselect)
 		{
-			exit(header("Location: install/ins1/2"));
+			exit(header('Location: install/ins1/2'));
 		}
 
 		$config_data		= '<?php if ( ! defined(\'BASEPATH\')) exit(\'No direct script access allowed\');\n\n';
@@ -109,7 +109,7 @@ class Install extends Controller {
 
 		if (( ! write_file(APPPATH .'config/custom'.EXT, $config_data)) OR ( ! write_file(APPPATH .'config/database'.EXT, $db_data)))
 		{
-			exit(header("Location: install/ins1/3"));
+			exit(header('Location: install/ins1/3'));
 		}
 
 		require_once(APPPATH .'includes/install/database'.EXT);
@@ -117,7 +117,7 @@ class Install extends Controller {
 		$this->db->query($QryTabledecryptor);
 		$this->db->query($QryUpdateTable);
 
-		$data['foot']		= $this->load->view('install/footer', "", TRUE);
+		$data['foot']		= $this->load->view('install/footer', '', TRUE);
 		$this->load->view('ins2', $data);
 	}
 }
