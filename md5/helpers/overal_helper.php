@@ -10,7 +10,7 @@ if ( ! function_exists('paypal_input'))
 			'border'		=> '0',
 			'name'			=> 'submit',
 			'alt'			=> lang('overal.paypal'),
-			'style'			=> '-moz-border-radius:5px 5px 5px 5px; background:none repeat scroll 0 0 #F9FFFF; margin: 10px; border:1px solid #CCDDDD; padding:4px 8px;'
+			'style'			=> 'border-radius:5px 5px 5px 5px; background:none repeat scroll 0 0 #F9FFFF; margin: 10px; border:1px solid #CCDDDD; padding:4px 8px;'
 		);
 		$paypal_input = form_input($paypal_input);
 
