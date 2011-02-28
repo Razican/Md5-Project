@@ -6,7 +6,7 @@
 		<tbody>
 		<tr>
 			<td colspan="4" height="160"><b><center>
-				<?php echo show_logo(); ?>
+				<?php echo img(array('src'	=> base_url().'styles/images/logo.png', 'alt'	=> 'Logo')); ?>
 			</center></b></td>
 		</tr><tr>
 			<td colspan="3" height="75" bgcolor="#FF3300">

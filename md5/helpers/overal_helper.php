@@ -84,22 +84,6 @@ if ( ! function_exists('string_submit'))
 	}
 }
 
-if ( ! function_exists('show_logo'))
-{
-	function show_logo()
-	{
-		global $LANG;
-
-		$show_logo = array(
-			'src'			=> base_url().'styles/images/'.$LANG->lang().'/logo.png',
-			'alt'			=> 'Logo'
-		);
-		$show_logo = img($show_logo);
-
-		return $show_logo;
-	}
-}
-
 if ( ! function_exists('skin_path'))
 {
 	function skin_path()
@@ -117,10 +101,10 @@ if ( ! function_exists('copyright'))
 		global $LANG;
 
 		$link		= 'http://creativecommons.org/licenses/by-nc-nd/3.0/deed.'.$LANG->lang();
-		$img		= array (
-		'src'	=> 'http://i.creativecommons.org/l/by-nc-nd/3.0/80x15.png',
-		'style'	=> 'border-width:0',
-		'alt'	=> 'Creative Commons License'
+		$img		= array(
+			'src'	=> 'http://i.creativecommons.org/l/by-nc-nd/3.0/80x15.png',
+			'style'	=> 'border-width:0',
+			'alt'	=> 'Creative Commons License'
 		);
 		
 		$copy_img	= img($img);

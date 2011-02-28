@@ -5,7 +5,7 @@
 	<table width="603" border="0" cellspacing="0">
 		<tr>
 			<td width="98" height="160" background="<?php echo skin_path(); ?>images/ttl.png">&nbsp;</td>
-			<td background="<?php echo skin_path(); ?>images/ttm.png"><center><?php echo show_logo(); ?></center></td>
+			<td background="<?php echo skin_path(); ?>images/ttm.png"><center><?php echo img(array('src'	=> base_url().'styles/images/logo.png', 'alt'	=> 'Logo')); ?></center></td>
 			<td width="98"  height="160" background="<?php echo skin_path(); ?>images/ttr.png">&nbsp;</td>
 		</tr>
 		<tr>

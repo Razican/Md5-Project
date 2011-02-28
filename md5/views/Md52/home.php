@@ -5,7 +5,7 @@
 		<table width="548" border="0" height="413"  background="<?php echo skin_path(); ?>images/indextable.png">
 			<tbody>
 			<tr>
-				<td colspan="3" height="130"><b><center><?php echo show_logo(); ?></center></b></td>
+				<td colspan="3" height="130"><b><center><?php echo img(array('src'	=> base_url().'styles/images/logo.png', 'alt'	=> 'Logo')); ?></center></b></td>
 			</tr><tr>
 				<td colspan="3" height="82" bgcolor="#FF3300">
 				<center>
