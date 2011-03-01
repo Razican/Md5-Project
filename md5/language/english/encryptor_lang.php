@@ -1,8 +1,10 @@
 <?php
  
-$lang['encryptor.title']	= "Encrypt Md5";
-$lang['encryptor.word']		= "Word";
+$lang['encryptor.string']	= "Word";
+$lang['encryptor.hash']		= "Md5 Hash";
 $lang['encryptor.action']	= "Encrypt";
- 
+
+
+
 /* End of file encryptor_lang.php */
-/* Location: ./system/application/language/english/encryptor_lang.php */
+/* Location: ./application/language/english/encryptor_lang.php */

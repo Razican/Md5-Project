@@ -1,9 +1,8 @@
 <?php
  
-$lang['admin.title']			= "Panel de Administración";
-$lang['admin.username']			= "Usuario";
-$lang['admin.password']			= "Contraseña";
-$lang['admin.login_submit']		= "Entrar";
+$lang['admin.username']			= "Username";
+$lang['admin.password']			= "Password";
+$lang['admin.login_submit']		= "Submit";
  
 /* End of file changelog_lang.php */
-/* Location: ./application/language/spanish/changelog_lang.php */
+/* Location: ./application/language/english/changelog_lang.php */

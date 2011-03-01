@@ -19,7 +19,7 @@ Class Decrypt extends CI_Model{
 			if ($query->num_rows() === 1)
 			{
 				$row			= $query->row();
-				$data['string']	= $row->characters;
+				$data['string']	= $row->string;
 				$result			= $this->load->view('decryption_result', $data, TRUE);
 			}
 			else

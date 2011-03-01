@@ -1,11 +1,19 @@
 <?php
- 
-$lang['changelog.title']		= "Aldaketa zerrenda";
+
 $lang['changelog.version']		= "Bertsioa";
 $lang['changelog.description']	= "Deskribapena";
 
 $lang['changelog.table']		= array(
-	"<font color='lime'>1.1</font>" => " 2010/04/04
+	"<font color='lime'>1.2</font>" => " 2011/01/30
+
+	- Fitxategi-hondakinak ezabatuta; deskarga orria eratzen zutenak.
+	- parsetemplate() funtzioan, functions.php artxiboan soberan zeuden lerroak ezabatuta UTF-8 erabiltzeari esker.
+	- [FIX] Iruzkinak hobetuta.
+	- [FIX] Hizkuntz arazoak konponduta.
+	- [FIX] Definitu gabeko aldagaien arazoa konponduta.
+	- [FIX] UTF-8-ren erabilera txertatuta.
+	",
+	"1.1" => " 2010/04/04
 
 	- [FIX] Itzulpenean akats batzuk zeuden.
 	- [FIX] Instalatzaileak akats bat zuen.
@@ -85,6 +93,6 @@ $lang['changelog.table']		= array(
 	- Proiektua hasita. Proiektu honen helburua Md5 enkriptatzaile / desenkriptatzaile bat egitea da.
 	",
 );
- 
+
 /* End of file changelog_lang.php */
-/* Location: ./system/application/language/basque/changelog_lang.php */
+/* Location: ./application/language/basque/changelog_lang.php */

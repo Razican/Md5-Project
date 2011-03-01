@@ -1,11 +1,19 @@
 <?php
- 
-$lang['changelog.title']		= "Change Log";
+
 $lang['changelog.version']		= "Version";
 $lang['changelog.description']	= "Description";
 
 $lang['changelog.table']		= array(
-	"<font color='lime'>1.1</font>" => " 04/04/2010
+	"<font color='lime'>1.2</font>" => " 01/30/2011
+
+	- Deleted residual files which were part of the downloads page.
+	- Deleted some lines in the function parsetemplate() in functions.php thanks to the implementation of UTF-8.
+	- [FIX] Improved the inline comments.
+	- [FIX] Fixed some language errors.
+	- [FIX] Fixed undeclared variables.
+	- [FIX] UTF-8 implemented.
+	",
+	"1.1" => " 04/04/2010
 
 	- [FIX] There where some minor translation bugs.
 	- [FIX] There was a bug in the installer.
@@ -85,6 +93,6 @@ $lang['changelog.table']		= array(
 	- The project has started. We'll try to create a Md5 encryptor / decryptor.
 	",
 );
- 
+
 /* End of file changelog_lang.php */
-/* Location: ./system/application/language/spanish/changelog_lang.php */
+/* Location: ./application/language/english/changelog_lang.php */

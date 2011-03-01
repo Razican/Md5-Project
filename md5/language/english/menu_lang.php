@@ -5,7 +5,6 @@ $lang['menu.version']		= "Version";
 $lang['menu.index']			= "Index";
 $lang['menu.contact']		= "Contact";
 $lang['menu.changelog']		= "Change Log";
-$lang['menu.admin']			= "Administration";
  
 /* End of file menu_lang.php */
-/* Location: ./system/application/language/english/menu_lang.php */
+/* Location: ./application/language/english/menu_lang.php */
