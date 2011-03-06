@@ -1,12 +1,12 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-Class Encrypt extends CI_Model{
+Class Encrypt_m extends CI_Model {
 
-	function Encrypt()
+	function __construct()
 	{
-		parent::CI_Model();
+		parent::__construct();	
 	}
-	
+
 	function str($str)
 	{
 		$hash		= do_hash($str, 'md5');
@@ -19,5 +19,6 @@ Class Encrypt extends CI_Model{
 	}
 }
 
+
 /* End of file encrypt.php */
-/* Location: ./system/application/models/encrypt.php */
+/* Location: ./application/models/encrypt.php */

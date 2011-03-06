@@ -114,5 +114,6 @@ if ( ! function_exists('copyright'))
 	}
 }
 
+
 /* End of file overal_helper.php */
-/* Location: ./system/application/helpers/overal_helper.php */
+/* Location: ./application/helpers/overal_helper.php */

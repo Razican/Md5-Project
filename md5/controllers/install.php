@@ -1,10 +1,10 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class Install extends Controller {
+class Install extends CI_Controller {
 
-	function Install()
+	function __construct()
 	{
-		parent::Controller();	
+		parent::__construct();	
 	}
 
 	function index()
@@ -121,6 +121,7 @@ class Install extends Controller {
 		$this->load->view('ins2', $data);
 	}
 }
+
 
 /* End of file install.php */
 /* Location: ./application/controllers/install.php */

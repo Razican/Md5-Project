@@ -1,12 +1,12 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class Admin extends Controller {
+class Admin extends CI_Controller {
 
-	function Admin()
+	function __construct()
 	{
-		parent::Controller();	
+		parent::__construct();	
 	}
-	
+
 	function index()
 	{
 		$this->lang->load('admin');
@@ -52,6 +52,7 @@ class Admin extends Controller {
 		echo "Ha ocurrido un error";
 	}
 }
+
 
 /* End of file admin.php */
 /* Location: ./application/controllers/admin.php */

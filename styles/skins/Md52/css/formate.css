@@ -124,6 +124,7 @@ table.menu td {
 	text-decoration: underline;
 	font-size: 10px;
 	color: white;	
+	margin-bottom: 10px;
 }
 
 .admin_link a {

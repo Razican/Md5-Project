@@ -12,5 +12,6 @@ $lang['contact.translator']		= "translator";
 $lang['contact.designer']		= "designer";
 $lang['contact.and']			= "and";
 
+
 /* End of file contact_lang.php */
-/* Location: ./application/langknownuage/english/contact_lang.php */
+/* Location: ./application/language/english/contact_lang.php */

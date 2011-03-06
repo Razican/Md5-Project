@@ -9,7 +9,7 @@
 | and its corresponding controller class/method. The segments in a
 | URL normally follow this pattern:
 |
-| 	example.com/class/method/id/
+|	example.com/class/method/id/
 |
 | In some instances, however, you may want to remap this relationship
 | so that a different class/function is called than the one
@@ -39,10 +39,11 @@ $route['^es/(.+)$'] = "$1";
 $route['^en/(.+)$'] = "$1";
 $route['^eu/(.+)$'] = "$1";
  
-// '/en' and '/fr' URIs -> use default controller
+// '/en' and '/es' URIs -> use default controller
 $route['^es$'] = $route['default_controller'];
 $route['^en$'] = $route['default_controller'];
 $route['^eu$'] = $route['default_controller'];
+
 
 /* End of file routes.php */
 /* Location: ./application/config/routes.php */

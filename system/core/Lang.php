@@ -2,11 +2,11 @@
 /**
  * CodeIgniter
  *
- * An open source application development framework for PHP 4.3.2 or newer
+ * An open source application development framework for PHP 5.1.6 or newer
  *
  * @package		CodeIgniter
  * @author		ExpressionEngine Dev Team
- * @copyright	Copyright (c) 2008 - 2010, EllisLab, Inc.
+ * @copyright	Copyright (c) 2008 - 2011, EllisLab, Inc.
  * @license		http://codeigniter.com/user_guide/license.html
  * @link		http://codeigniter.com
  * @since		Version 1.0
@@ -34,7 +34,7 @@ class CI_Lang {
 	 *
 	 * @access	public
 	 */
-	function CI_Lang()
+	function __construct()
 	{
 		log_message('debug', "Language Class Initialized");
 	}
@@ -120,7 +120,7 @@ class CI_Lang {
 	 * Fetch a single line of text from the language array
 	 *
 	 * @access	public
-	 * @param	string	$line 	the language line
+	 * @param	string	$line	the language line
 	 * @return	string
 	 */
 	function line($line = '')

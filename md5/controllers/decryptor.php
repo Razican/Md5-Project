@@ -1,12 +1,12 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class Decryptor extends Controller {
+class Decryptor extends CI_Controller {
 
-	function Decryptor()
+	function __construct()
 	{
-		parent::Controller();	
+		parent::__construct();	
 	}
-	
+
 	function index()
 	{
 		$this->lang->load('decryptor');
@@ -27,7 +27,7 @@ class Decryptor extends Controller {
 			redirect('/decryptor');
 		}
 		$this->lang->load('decryptor');
-		$this->load->model('decrypt');
+		$this->load->model('decrypt_m');
 
 		$data['head']			= $this->load->view('header', '', TRUE);
 		$data['menu']			= $this->load->view('menu_decryption', "", TRUE);
@@ -36,11 +36,12 @@ class Decryptor extends Controller {
 		$data['hidden']			= array('cmd' => '_s-xclick', 'hosted_button_id' => '8255830');
 
 		$hash					= $this->input->post('hash');
-		$data['result']			= $this->decrypt->hash($hash);
+		$data['result']			= $this->decrypt_m->hash($hash);
 		
 		$this->load->view('decrypt', $data);
 	}
 }
+
 
 /* End of file decryptor.php */
 /* Location: ./application/controllers/decryptor.php */

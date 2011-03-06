@@ -1,12 +1,12 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-Class Decrypt extends CI_Model{
+Class Decrypt_m extends CI_Model {
 
-	function Decrypt()
+	function __construct()
 	{
-		parent::CI_Model();
+		parent::__construct();	
 	}
-	
+
 	function hash($hash)
 	{
 		$data['hash']	= $hash;
@@ -35,5 +35,6 @@ Class Decrypt extends CI_Model{
 	}
 }
 
+
 /* End of file decrypt.php */
-/* Location: ./system/application/models/decrypt.php */
+/* Location: ./application/models/decrypt.php */

@@ -1,6 +1,6 @@
 <?php
 
-class MY_Loader extends CI_Loader {
+class Md5_Loader extends CI_Loader {
 
 	function view($view, $vars = array(), $return = FALSE)
 	{
@@ -16,5 +16,6 @@ class MY_Loader extends CI_Loader {
 	}
 }
 
-/* End of file MY_Loader.php */
-/* Location: ./application/core/MY_Loader.php */
+
+/* End of file Md5_Loader.php */
+/* Location: ./application/core/Md5_Loader.php */

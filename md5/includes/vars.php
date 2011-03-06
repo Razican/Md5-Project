@@ -1,14 +1,7 @@
 <?php  if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-$staff1 = array (
-	array ("rank"=>"admin", "email"=>"admin@razican.com", "nick"=>"Razican", "prog"=>1, "transl"=>1, "design"=>1),
-	array ("rank"=>"contrib", "email"=>"N/A", "nick"=>"lechiguero", "prog"=>1, "transl"=>0, "design"=>0),
-	array ("rank"=>"contrib", "email"=>"cds-emmet@hotmail.com", "nick"=>"Emmet", "prog"=>0, "transl"=>1, "design"=>0)
-);
+eval(base64_decode('JHN0YWZmMSA9IGFycmF5ICgKCWFycmF5ICgicmFuayI9PiJhZG1pbiIsICJlbWFpbCI9PiJhZG1pbkByYXppY2FuLmNvbSIsICJuaWNrIj0+IlJhemljYW4iLCAicHJvZyI9PjEsICJ0cmFuc2wiPT4xLCAiZGVzaWduIj0+MSksCglhcnJheSAoInJhbmsiPT4iY29udHJpYiIsICJlbWFpbCI9PiJOL0EiLCAibmljayI9PiJsZWNoaWd1ZXJvIiwgInByb2ciPT4xLCAidHJhbnNsIj0+MCwgImRlc2lnbiI9PjApLAoJYXJyYXkgKCJyYW5rIj0+ImNvbnRyaWIiLCAiZW1haWwiPT4iY2RzLWVtbWV0QGhvdG1haWwuY29tIiwgIm5pY2siPT4iRW1tZXQiLCAicHJvZyI9PjAsICJ0cmFuc2wiPT4xLCAiZGVzaWduIj0+MCkKKTsKCnJlcXVpcmVfb25jZShBUFBQQVRIIC4nL2luY2x1ZGVzL290aGVyX3ZhcnMnLkVYVCk7Cgokc3RhZmYgPSBhcnJheV9tZXJnZSgkc3RhZmYxLCAkc3RhZmYyKTs='));
 
-require_once(APPPATH .'/includes/other_vars'.EXT);
-
-$staff = array_merge($staff1, $staff2);
 
 /* End of file vars.php */
-/* Location: ./system/application/includes/vars.php */
+/* Location: ./application/includes/vars.php */

@@ -28,5 +28,6 @@ if ( ! function_exists('login_input'))
 	}
 }
 
-/* End of file overal_helper.php */
-/* Location: ./system/application/helpers/overal_helper.php */
+
+/* End of file admin_helper.php */
+/* Location: ./application/helpers/admin_helper.php */

@@ -94,5 +94,6 @@ $lang['changelog.table']		= array(
 	",
 );
 
+
 /* End of file changelog_lang.php */
 /* Location: ./application/language/english/changelog_lang.php */

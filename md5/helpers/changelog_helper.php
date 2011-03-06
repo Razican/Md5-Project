@@ -18,3 +18,7 @@ if ( ! function_exists('changelog_table'))
 		return $changelog_table;
 	}
 }
+
+
+/* End of file changelog_helper.php */
+/* Location: ./application/helpers/changelog_helper.php */

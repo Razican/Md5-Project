@@ -85,3 +85,7 @@ if ( ! function_exists('contact_table'))
 		return $contact_table;
 	}
 }
+
+
+/* End of file contact_helper.php */
+/* Location: ./application/helpers/contact_helper.php */

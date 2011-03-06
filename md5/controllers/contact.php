@@ -1,12 +1,12 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class Contact extends Controller {
+class Contact extends CI_Controller {
 
-	function Contact()
+	function __construct()
 	{
-		parent::Controller();	
+		parent::__construct();	
 	}
-	
+
 	function index()
 	{
 		$this->lang->load('contact');
@@ -23,6 +23,7 @@ class Contact extends Controller {
 	}
 	
 }
+
 
 /* End of file contact.php */
 /* Location: ./application/controllers/contact.php */

@@ -1,12 +1,12 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class Home extends Controller {
+class Home extends CI_Controller {
 
-	function Home()
+	function __construct()
 	{
-		parent::Controller();	
+		parent::__construct();	
 	}
-	
+
 	function index()
 	{
 /*		if (file_exists(APPPATH ."controllers/install.php"))
@@ -32,6 +32,7 @@ class Home extends Controller {
 		$this->load->view('home', $data);
 	}
 }
+
 
 /* End of file home.php */
 /* Location: ./application/controllers/home.php */

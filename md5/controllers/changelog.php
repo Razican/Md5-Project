@@ -1,12 +1,12 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class Changelog extends Controller {
+class Changelog extends CI_Controller {
 
-	function Changelog()
+	function __construct()
 	{
-		parent::Controller();	
+		parent::__construct();	
 	}
-	
+
 	function index()
 	{
 		$this->lang->load('changelog');
@@ -24,5 +24,6 @@ class Changelog extends Controller {
 	
 }
 
-/* End of file contact.php */
-/* Location: ./application/controllers/contact.php */
+
+/* End of file changelog.php */
+/* Location: ./application/controllers/changelog.php */

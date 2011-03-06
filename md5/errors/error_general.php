@@ -1,7 +1,7 @@
 <html>
 <head>
 <title>Error</title>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
 <style type="text/css">
 
 body {
@@ -22,7 +22,7 @@ h1 {
 font-weight:		normal;
 font-size:			14px;
 color:				#990000;
-margin: 			0 0 4px 0;
+margin:				0 0 4px 0;
 }
 </style>
 </head>
