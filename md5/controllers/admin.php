@@ -14,37 +14,13 @@ class Admin extends Controller {
 		$this->load->library('encrypt');
 
 		if((!$this->input->post('username')) OR (!$this->input->post('password')))
-		{
-			$cookie						= get_cookie('md5project', TRUE);
-			
-			if ($cookie)
-			{
+		{			
+			$data['head']			= $this->load->view('header', '', TRUE);
+			$data['menu']			= $this->load->view('menu', '', TRUE);
 
-				$cookie					= explode("/%/", $cookie);
+			$data['foot']			= $this->load->view('foot', '', TRUE);
 
-					if ($this->config->item('admin_password') === $this->encrypt->decode($cookie[1]) && ($this->encrypt->decode($cookie[0]) === $this->config->item('admin_username')))
-					{
-						/*$data['head']	= $this->load->view('adm/header', '', TRUE);
-						$data['menu']	= $this->load->view('adm/menu', '', TRUE);
-
-						$this->load->view('adm/index', $data);*/
-						echo "¡Estás dentro!";
-					}
-					else
-					{
-						delete_cookie('md5project');
-						redirect('admin/error', 'location', 301);
-					}
-			}
-			else
-			{
-				$data['head']			= $this->load->view('header', '', TRUE);
-				$data['menu']			= $this->load->view('menu', '', TRUE);
-
-				$data['foot']			= $this->load->view('foot', '', TRUE);
-				
-				$this->load->view('login', $data);
-			}
+			$this->load->view('login', $data);
 		}
 		else
 		{
