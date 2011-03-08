@@ -69,31 +69,29 @@ class Md5_Lang extends CI_Lang {
 	function is_special($uri)
 	{
 		$exploded = explode('/', $uri);
-		if (in_array($exploded[0], $this->special))
+		if ((in_array($exploded[0], $this->special)) OR (isset($this->languages[$uri])))
 		{
 			return TRUE;
 		}
-		if(isset($this->languages[$uri]))
+		else
 		{
-			return TRUE;
-		}
-		return FALSE;
+			return FALSE;
+		}		
 	}
 
 	function switch_uri($lang)
 	{
 		$CI =& get_instance();
 
-		$uri = $CI->uri->uri_string();
-		if ($uri != "")
+		if (defined('IN_ADMIN'))
 		{
-			$exploded = explode('/', $uri);
-			if($exploded[1] == $this->lang())
-			{
-				$exploded[1] = $lang;
-			}
-			$uri = implode('/',$exploded);
+			$uri = '/'.$lang.'/'.$CI->uri->segment(2).'/'.$CI->uri->segment(3);
 		}
+		else
+		{
+			$uri = '/'.$lang.'/'.$CI->uri->segment(2);
+		}
+
 		return $uri;
 	}
 

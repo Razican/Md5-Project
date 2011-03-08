@@ -30,7 +30,7 @@ class Encryptor extends CI_Controller {
 		$this->load->model('encrypt_m');
 		
 		$data['head']			= $this->load->view('header', '', TRUE);
-		$data['menu']			= $this->load->view('menu_encryption', "", TRUE);
+		$data['menu']			= $this->load->view('menu', "", TRUE);
 		$data['hidden']			= array('cmd' => '_s-xclick', 'hosted_button_id' => '8255830');
 		$data['string']			= $this->input->post('string');
 		$data['hash']			= $this->encrypt_m->str($this->input->post('string'));

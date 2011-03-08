@@ -1,19 +1,22 @@
-		<table class="menu">
-			<tr align="center" valign="middle">
-				<td width="14" style="background: url(<?php echo skin_path(); ?>images/menuleft.png) no-repeat;">&nbsp;</td>
-				<td width="160" style="background: url(<?php echo skin_path(); ?>images/menucenter.png);" class="menutext"><?php echo lang('menu.version'); ?>: <?php echo $this->config->item('version'); ?></td>
-				<td width="160" style="background: url(<?php echo skin_path(); ?>images/menucenter.png);">
-					<div id="lang"><ul><li class="level1"><a class="level1"><?php echo lang('menu.language'); ?></a>
+		<div class="menu-margin"><div class="menu">
+			<div class="menu-left"></div>
+			<div class="menu-center">
+				<div class="menu-choice" style="width: 160px;"><?php echo lang('menu.version'); ?>: <?php echo $this->config->item('version'); ?></div>
+				<div class="menu-choice" style="width: 160px;">
+					<div id="lang">
+					<ul><li class="level1"><a class="level1"><?php echo lang('menu.language'); ?></a>
 						<ul>
 							<li><?php echo anchor($this->lang->switch_uri('es'),'Español', 'class="level2"'); ?></li>
 							<li><?php echo anchor($this->lang->switch_uri('en'),'English', 'class="level2"'); ?></li>
 							<li><?php echo anchor($this->lang->switch_uri('eu'),'Euskara', 'class="level2"'); ?></li>
 						</ul>
-					</li></ul></div>
-				</td>
-				<td width="100" style="background: url(<?php echo skin_path(); ?>images/menucenter.png);"><?php echo anchor('', lang('menu.index')); ?></td>
-				<td width="130" style="background: url(<?php echo skin_path(); ?>images/menucenter.png);"><?php echo anchor('contact', lang('menu.contact')); ?></td>
-				<td width="180" style="background: url(<?php echo skin_path(); ?>images/menucenter.png);"><?php echo anchor('changelog', lang('menu.changelog')); ?></td>
-				<td width="16" style="background: url(<?php echo skin_path(); ?>images/menuright.png) no-repeat">&nbsp;</td>
-			</tr>
-		</table>
+					</li></ul>
+					</div>
+				</div>
+				<div class="menu-choice" style="width: 100px;"><?php echo anchor('', lang('menu.index')); ?></div>
+				<div class="menu-choice" style="width: 130px;"><?php echo anchor('contact', lang('menu.contact')); ?></div>
+				<div class="menu-choice" style="width: 180px;"><?php echo anchor('changelog', lang('menu.changelog')); ?></div>
+			</div>
+			<div class="menu-right"></div>
+		</div></div>
+		<div id="content-wrapper">

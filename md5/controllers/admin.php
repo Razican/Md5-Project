@@ -10,39 +10,55 @@ class Admin extends CI_Controller {
 	function index()
 	{
 		$this->lang->load('admin');
-		$this->load->helper(array('cookie', 'admin'));
+		$this->load->helper('admin');
 		$this->load->library('encrypt');
 
 		if((!$this->input->post('username')) OR (!$this->input->post('password')))
 		{			
-			$data['head']			= $this->load->view('header', '', TRUE);
-			$data['menu']			= $this->load->view('menu', '', TRUE);
+			if($this->session->userdata('logged_in'))
+			{
+				define('IN_ADMIN', TRUE);
 
-			$data['foot']			= $this->load->view('foot', '', TRUE);
+				$data['head']			= $this->load->view('header', '', TRUE);
+				$data['menu']			= $this->load->view('admin/menu', '', TRUE);
 
-			$this->load->view('login', $data);
+				$data['foot']			= $this->load->view('admin/foot', '', TRUE);
+				
+				$data['hidden']			= array('cmd' => '_s-xclick', 'hosted_button_id' => '8255830');
+
+				$this->load->view('admin/home', $data);
+			}
+			else
+			{
+				$data['head']			= $this->load->view('header', '', TRUE);
+				$data['menu']			= $this->load->view('menu', '', TRUE);
+
+				$data['foot']			= $this->load->view('admin/foot', '', TRUE);
+
+				$this->load->view('admin/login', $data);
+			}
 		}
 		else
 		{
 		
 			if (($this->config->item('admin_password') == sha1($this->input->post('password', TRUE))) && ($this->input->post('username', TRUE) === $this->config->item('admin_username')))
 			{
-				if (!$this->input->post('remember', TRUE))
+				if (!$this->input->post('remember'))
 				{
-					$expire			= 0;
+					$this->config->set_item('sess_expire_on_close', TRUE);
 				}
-				else
-				{
-					$expire			= 7*24*60*60;
-				}
-				set_cookie('md5project', $this->encrypt->encode($this->input->post('username', TRUE)).'/%/'.$this->encrypt->encode(sha1($this->input->post('password', TRUE))), $expire, $this->config->item('cookie_domain'));
-				
-				redirect('admin', 'location', 301);
+				$userdata	= array(					
+					'logged_in' => TRUE
+					);
+
+				$this->session->set_userdata($userdata);
+
+				redirect('admin', 'location', 302);
 			}
 			else
 			{
 				echo "Pass o user mal";
-				//redirect('admin/error', 'location', 301);
+				//redirect('admin/error', 'location', 302);
 			}
 		}
 	}

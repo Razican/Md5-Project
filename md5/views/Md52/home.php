@@ -22,4 +22,5 @@
 			</tr>
 			</tbody>
 		</table>
+
 <?php echo $foot ?>

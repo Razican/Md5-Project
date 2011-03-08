@@ -10,7 +10,7 @@ if ( ! function_exists('paypal_input'))
 			'border'		=> '0',
 			'name'			=> 'submit',
 			'alt'			=> lang('overal.paypal'),
-			'style'			=> 'border-radius:5px 5px 5px 5px; background:none repeat scroll 0 0 #F9FFFF; margin: 10px; border:1px solid #CCDDDD; padding:4px 8px;'
+			'id'			=> 'paypal-img'
 		);
 		$paypal_input = form_input($paypal_input);
 
@@ -103,7 +103,6 @@ if ( ! function_exists('copyright'))
 		$link		= 'http://creativecommons.org/licenses/by-nc-nd/3.0/deed.'.$LANG->lang();
 		$img		= array(
 			'src'	=> 'http://i.creativecommons.org/l/by-nc-nd/3.0/80x15.png',
-			'style'	=> 'border-width:0',
 			'alt'	=> 'Creative Commons License'
 		);
 		

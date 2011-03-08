@@ -30,7 +30,7 @@ class Decryptor extends CI_Controller {
 		$this->load->model('decrypt_m');
 
 		$data['head']			= $this->load->view('header', '', TRUE);
-		$data['menu']			= $this->load->view('menu_decryption', "", TRUE);
+		$data['menu']			= $this->load->view('menu', "", TRUE);
 
 		$data['foot']			= $this->load->view('foot', '', TRUE);
 		$data['hidden']			= array('cmd' => '_s-xclick', 'hosted_button_id' => '8255830');

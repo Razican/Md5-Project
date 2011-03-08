@@ -4,24 +4,19 @@ a {
 	font-weight: bold;
 	color: #FFF;
 }
-/*FIN*/
-
-/*cualquier texto del menú*/
-.menutext {
-	color: #FFF;
-	font-weight: bold;
-}
-/*FIN*/
+/*END*/
 
 * {
-	margin: 0px;
-	padding: 0px; outline: 0;
+	margin: 0;
+	padding: 0; outline: 0;
 }
 
-/*Sistema de lenguaje*/
+/*Language System*/
 #lang {
+	margin: 0 auto;
 	text-align: center;
 	font-weight: bold;
+	width: 160px;
 }
 
 #lang ul {
@@ -30,7 +25,7 @@ a {
 
 #lang ul li.level1 {
 	float: left;
-	width: 115px;
+	width: 160px;
 	margin-right: none;
 	background-color: none;
 }
@@ -84,7 +79,7 @@ a {
 }
 
 #lang ul li ul li a {
-	width: 115px;
+	width: 160px;
 	padding: 0px 0px 0px 0px;
 	border-top-color: #000;
 }
@@ -93,40 +88,110 @@ a {
 	border-top-color: #000;
 	position: relative;
 }
-/*FIN*/
+/*END*/
+
+#paypal-img {
+	border-radius:5px 5px 5px 5px;
+	background:none repeat scroll 0 0 #F9FFFF;
+	margin: 10px;
+	border:1px solid #CCDDDD;
+	padding:4px 8px;
+}
+
+.menu-center img {
+	border: 0;
+	vertical-align: middle;
+}
 
 table.falsa {
 	border-collapse:collapse;
-	border:0px;
+	border:0;
 	float: left;
 	position: relative;
 }
 
 body {
 	background-color: #ffa217;
+	text-align:center;
 }
 
-table.menu {
-	margin: 20px;
-	width: 740px;
-	height: 30px;
-	border: 0px;
-	text-align: center;
-	border-collapse: collapse;	
-}
-
-table.menu td {
-	border: 0px;
-}
-
-.admin_link {
+.admin-link {
 	text-align: center;
 	text-decoration: underline;
 	font-size: 10px;
 	color: white;	
-	margin-bottom: 10px;
 }
 
-.admin_link a {
+.admin-link a {
 	color: red;
+}
+
+.admin-content {
+	width: 740px;
+	text-align: center;	
+}
+
+.alerts {
+	width: 100%;
+	height: 50px;
+	-moz-border-radius: 15px 15px 0px 0px;
+	border-radius: 15px 15px 0px 0px;
+}
+
+.settings-summary {
+	width: 100%;
+	min-height: 50px;
+	-moz-border-radius: 0px 0px 15px 15px;
+	border-radius: 0px 0px 15px 15px;
+	background-color: red;
+}
+
+.menu-margin {
+	margin: 20px 0 20px 0;
+	width: 740px;
+}
+
+.menu {
+	width: 100%;
+	height: 30px;
+	color: #FFF;
+	font-weight: bold;
+	text-align: center;
+	display: table-row;
+}
+
+.menu-left {
+	width: 14px;
+	height: 100%;
+	background: url(./../images/menuleft.png) no-repeat;
+}
+
+.menu-center {
+	width: 712px;
+	height: 100%;
+	background: url(./../images/menucenter.png);
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.menu-right {
+	width: 14px;
+	height: 100%;
+	background: url(./../images/menuright.png) no-repeat;
+}
+
+.menu-choice {
+	height: 100%;
+	display: table-cell;
+	vertical-align: middle;
+}
+#body-wrapper {
+	margin: 0 auto;
+	width: 740px;
+	text-align: center;
+}
+
+#content-wrapper {
+	margin: 0 auto;
+	width: 548px	
 }
