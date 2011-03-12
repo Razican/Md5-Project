@@ -11,7 +11,6 @@ class Admin extends CI_Controller {
 	{
 		$this->lang->load('admin');
 		$this->load->helper('admin');
-		$this->load->library('encrypt');
 
 		if((!$this->input->post('username')) OR (!$this->input->post('password')))
 		{			
