@@ -2,13 +2,13 @@
 
 class Encryptor extends CI_Controller {
 
-	function __construct()
+	public function index()
 	{
-		parent::__construct();	
-	}
+		if($this->uri->segment(3))
+		{
+			redirect('encryptor');
+		}
 
-	function index()
-	{
 		$this->lang->load('encryptor');		
 
 		$data['head'] = $this->load->view('header', '', TRUE);
@@ -20,7 +20,7 @@ class Encryptor extends CI_Controller {
 		$this->load->view('encryptor', $data);
 	}
 	
-	function encrypt()
+	public function encrypt()
 	{
 		if (!$this->input->post('string'))
 		{

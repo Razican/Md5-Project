@@ -2,13 +2,13 @@
 
 class Changelog extends CI_Controller {
 
-	function __construct()
+	public function index()
 	{
-		parent::__construct();	
-	}
+		if($this->uri->segment(3))
+		{
+			redirect('changelog');
+		}
 
-	function index()
-	{
 		$this->lang->load('changelog');
 		$this->load->helper('changelog');
 

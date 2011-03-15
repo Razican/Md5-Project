@@ -2,12 +2,7 @@
 
 Class Decrypt_m extends CI_Model {
 
-	function __construct()
-	{
-		parent::__construct();	
-	}
-
-	function hash($hash)
+	public function hash($hash)
 	{
 		$data['hash']	= $hash;
 

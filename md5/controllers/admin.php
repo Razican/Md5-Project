@@ -2,13 +2,13 @@
 
 class Admin extends CI_Controller {
 
-	function __construct()
+	public function index()
 	{
-		parent::__construct();	
-	}
+		if($this->uri->segment(3))
+		{
+			redirect('admin');
+		}
 
-	function index()
-	{
 		$this->lang->load('admin');
 		$this->load->helper('admin');
 
@@ -62,7 +62,7 @@ class Admin extends CI_Controller {
 		}
 	}
 
-	function error()
+	public function error()
 	{
 		echo "Ha ocurrido un error";
 	}

@@ -2,13 +2,13 @@
 
 class Home extends CI_Controller {
 
-	function __construct()
+	public function index()
 	{
-		parent::__construct();	
-	}
+		if($this->uri->segment(2))
+		{
+			redirect('/');
+		}
 
-	function index()
-	{
 /*		if (file_exists(APPPATH ."controllers/install.php"))
 		{
 			if (!$this->config->item('version'))
@@ -21,6 +21,7 @@ class Home extends CI_Controller {
 			}
 		}
 */
+
 		$this->lang->load('home');		
 
 		$data['head']			= $this->load->view('header', '', TRUE);

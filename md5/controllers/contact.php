@@ -2,13 +2,13 @@
 
 class Contact extends CI_Controller {
 
-	function __construct()
+	public function index()
 	{
-		parent::__construct();	
-	}
+		if($this->uri->segment(3))
+		{
+			redirect('contact');
+		}
 
-	function index()
-	{
 		$this->lang->load('contact');
 		$this->load->helper(array('contact', 'inflector'));
 

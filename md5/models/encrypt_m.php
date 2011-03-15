@@ -2,12 +2,7 @@
 
 Class Encrypt_m extends CI_Model {
 
-	function __construct()
-	{
-		parent::__construct();	
-	}
-
-	function str($str)
+	public function str($str)
 	{
 		$hash		= do_hash($str, 'md5');
 		$query		= $this->db->get_where($this->db->dbprefix('decryptor'), array('hash' => $hash), '1');

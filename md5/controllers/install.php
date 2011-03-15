@@ -2,29 +2,30 @@
 
 class Install extends CI_Controller {
 
-	function __construct()
+	public function index()
 	{
-		parent::__construct();	
-	}
+		if($this->uri->segment(3))
+		{
+			redirect('install');
+		}
 
-	function index()
-	{
 /*		if (file_exists(APPPATH .'config/custom'.EXT))
 		{
 			die("<html><head><title>Error!</title></head><body><p><h2><b>Por favor, elimina los siguientes archivos y carpetas:</b></h2><br /><div style=\"color: red;\">". APPPATH ."language/basque/install<br />". APPPATH ."language/english/install<br />". APPPATH ."language/spanish/install<br />". APPPATH ."controllers/install.php<br />". APPPATH ."includes/install/<br />". APPPATH ."views/install/</div></p>Por razones de seguridad, es obligatorio eliminarlos, gracias.</body></html>");
 		}
 */
+
 		exit(header('location: install/intro'));
 	}
 
-	function intro()
+	public function intro()
 	{
 		define('INSTALL', TRUE);
 		$this->lang->load('install/lang');
 		$this->load->view('intro');
 	}
 
-	function ins1($error = NULL)
+	public function ins1($error = NULL)
 	{
 		define('INSTALL', TRUE);
 		$this->lang->load('install/lang');
@@ -38,7 +39,7 @@ class Install extends CI_Controller {
 		$this->load->view('ins1', $data);
 	}
 
-	function ins2()
+	public function ins2()
 	{
 		define('INSTALL', TRUE);
 		$this->lang->load('install/lang');

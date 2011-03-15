@@ -2,13 +2,13 @@
 
 class Decryptor extends CI_Controller {
 
-	function __construct()
+	public function index()
 	{
-		parent::__construct();	
-	}
+		if($this->uri->segment(3))
+		{
+			redirect('decryptor');
+		}
 
-	function index()
-	{
 		$this->lang->load('decryptor');
 
 		$data['head']			= $this->load->view('header', '', TRUE);
@@ -20,7 +20,7 @@ class Decryptor extends CI_Controller {
 		$this->load->view('decryptor', $data);
 	}
 	
-	function decrypt()
+	public function decrypt()
 	{
 		if (!$this->input->post('hash'))
 		{
