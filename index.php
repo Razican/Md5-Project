@@ -1,7 +1,5 @@
 <?php
 
-ini_set('display_errors', 1);
-
 /*
  *---------------------------------------------------------------
  * APPLICATION ENVIRONMENT
@@ -34,11 +32,13 @@ ini_set('display_errors', 1);
 	{
 		case 'development':
 			error_reporting(E_ALL);
+			ini_set('display_errors', 1);
 		break;
 	
 		case 'testing':
 		case 'production':
 			error_reporting(0);
+			ini_set('display_errors', 0);
 		break;
 
 		default:
@@ -126,9 +126,6 @@ ini_set('display_errors', 1);
 // --------------------------------------------------------------------
 // END OF USER CONFIGURABLE SETTINGS.  DO NOT EDIT BELOW THIS LINE
 // --------------------------------------------------------------------
-
-
-
 
 /*
  * ---------------------------------------------------------------
