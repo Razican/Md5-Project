@@ -194,10 +194,9 @@ body {
 	width: 740px	
 }
 
-.content {
+.content-wrapper {
 	width: 740px;
 	height: 413px;
-	background-color: #ff3300;
 	border-radius: 30px;
 }
 
@@ -206,10 +205,30 @@ body {
 	width: 100%;
 	text-align: center;
 	height: 160px;
-	background: -moz-radial-gradient(50% 100%, farthest-corner, #ff3300, #fff);
-	background: -webkit-gradient(radial, 50% 100%, 0, 50% 50%, 350, from(#ff3300), to(#fff));
+	background: url(./../images/logo_bg.png) no-repeat;
 }
 
 .paypal-form {
 	height: 80px;
+}
+
+#logo {
+	padding-top: 20px;
+}
+
+.content {
+	background-color: #ff3300;
+	border-radius: 0 0 50px 50px;
+}
+
+.home-button {
+	margin: 25px;
+	display: inline-block;
+	padding: 0 25px 0 25px;
+}
+
+.content-desc {
+	margin: 20px;
+	color: orange;
+	font-weight: bold;
 }
