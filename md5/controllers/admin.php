@@ -16,7 +16,6 @@ class Admin extends CI_Controller {
 		{			
 			if($this->session->userdata('logged_in'))
 			{
-				define('IN_ADMIN', TRUE);
 
 				$data['head']			= $this->load->view('header', '', TRUE);
 				$data['menu']			= $this->load->view('admin/menu', '', TRUE);

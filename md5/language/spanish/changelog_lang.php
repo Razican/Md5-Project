@@ -2,9 +2,10 @@
 
 $lang['changelog.version']		= "Versión";
 $lang['changelog.description']	= "Descripción";
+$lang['changelog.desc_long']	= "La lista de cambios muestra los cambios que ha habido en las últimas versiones de Md5 Project";
 
 $lang['changelog.table']		= array(
-	"<font color='lime'>1.2</font>" => " 30/01/2011
+	"<font color='lime'>1.2</font>" => "<div class=\"changelog-date\">30/01/2011</div>
 
 	- Borrados archivos residuales de la página de descargas.
 	- Se borran líneas en la función parsetemplate() de functions.php gracias a la implantación de UTF-8.
@@ -13,7 +14,7 @@ $lang['changelog.table']		= array(
 	- [FIX] Se soluciona el problema de las variables no declaradas.
 	- [FIX] Se implementa el uso de UTF-8.
 	",
-	"1.1" => " 04/04/201
+	"1.1" => "<div class=\"changelog-date\">04/04/201</div>
 
 	- [FIX] Había algunos errores en la traducción.
 	- [FIX] Había un fallo en el instalador.
@@ -24,7 +25,7 @@ $lang['changelog.table']		= array(
 	- Comentados todos los archivos.
 	- [FIX] Había una falla de seguridad en algunos archivos.
 	",
-	"1.0" => " 27/09/2009
+	"1.0" => "<div class=\"changelog-date\">27/09/2009</div>
 
 	- Creado un generador automático de cadenas de caracteres.
 	- Cambiado el nombre del proyecto. Pasa a llamarse \"Proyecto Md5\".
@@ -48,7 +49,7 @@ $lang['changelog.table']		= array(
 	- Optimizado un poco los archivos.
 	- Mejorado el sistema de lenguaje.
 	",
-	"RC 1" => " 14/07/2009
+	"RC 1" => "<div class=\"changelog-date\">14/07/2009</div>
 
 	- Optimizadas todas las imágenes.
 	- Skin acabado.
@@ -64,7 +65,7 @@ $lang['changelog.table']		= array(
 	- [FIX] El sistema de lenguaje tenía un error grave.
 	- Se ha aplicado un skin a la página de inicio.
 	",
-	"Beta 2" => " 02/07/2009
+	"Beta 2" => "<div class=\"changelog-date\">02/07/2009</div>
 
 	- [FIX] El menú no funcionaba correctamente.
 	- [FIX] El desencriptador no funcionaba.
@@ -76,7 +77,7 @@ $lang['changelog.table']		= array(
 	- [FIX] El encriptador no distinguía entre mayusculas y minusculas al almacenar valores.
 	- [FIX] El encriptador almacenaba valores repetidos.
 	",
-	"Beta 1" => " 26/06/2009 'El comienzo'
+	"Beta 1" => "<div class=\"changelog-date\">26/06/2009</div>
 
 	- [FIX] El menú no mostraba los links.
 	- Programa traducido al 100% a español, vasco y inglés.

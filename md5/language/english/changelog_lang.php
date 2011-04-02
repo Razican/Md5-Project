@@ -2,9 +2,10 @@
 
 $lang['changelog.version']		= "Version";
 $lang['changelog.description']	= "Description";
+$lang['changelog.desc_long']	= "The change log shows the changes that have been made to the last versions of Md5 Project";
 
 $lang['changelog.table']		= array(
-	"<font color='lime'>1.2</font>" => " 01/30/2011
+	"<font color='lime'>1.2</font>" => "<div class=\"changelog-date\">01/30/2011</div>
 
 	- Deleted residual files which were part of the downloads page.
 	- Deleted some lines in the function parsetemplate() in functions.php thanks to the implementation of UTF-8.
@@ -13,7 +14,7 @@ $lang['changelog.table']		= array(
 	- [FIX] Fixed undeclared variables.
 	- [FIX] UTF-8 implemented.
 	",
-	"1.1" => " 04/04/2010
+	"1.1" => "<div class=\"changelog-date\">04/04/2010</div>
 
 	- [FIX] There where some minor translation bugs.
 	- [FIX] There was a bug in the installer.
@@ -24,7 +25,7 @@ $lang['changelog.table']		= array(
 	- All the files have been commented.
 	- [FIX] There was a security problem in some files.
 	",
-	"1.0" => " 27/09/2009
+	"1.0" => "<div class=\"changelog-date\">27/09/2009</div>
 
 	- Created a random strin generator.
 	- Project name changed. The new name is \"Md5 Project\".
@@ -48,7 +49,7 @@ $lang['changelog.table']		= array(
 	- Archives optimized.
 	- Languaje sistem improved.
 	",
-	"RC 1" => " 14/07/2009
+	"RC 1" => "<div class=\"changelog-date\">14/07/2009</div>
 
 	- Images had been optimized.
 	- Skin finished.
@@ -64,7 +65,7 @@ $lang['changelog.table']		= array(
 	- [FIX] Language sistem had a big bug.
 	- Index page now has a good skin.
 	",
-	"Beta 2" => " 02/07/2009
+	"Beta 2" => "<div class=\"changelog-date\">02/07/2009</div>
 
 	- [FIX] The menu didn't work correctly.
 	- [FIX] The decryptor didn't work.
@@ -76,7 +77,7 @@ $lang['changelog.table']		= array(
 	- [FIX] The encryptor wasn't case sensitive.
 	- [FIX] The encryptor stored repeated values.
 	",
-	"Beta 1" => " 26/06/2009 'The beginning'
+	"Beta 1" => "<div class=\"changelog-date\">26/06/2009</div>
 
 	- [FIX] The menu wasn't showing links.
 	- Program translated 100% to spanish, english and basque.

@@ -196,7 +196,7 @@ body {
 
 .content-wrapper {
 	width: 740px;
-	height: 413px;
+	min-height: 413px;
 	border-radius: 30px;
 }
 
@@ -231,4 +231,34 @@ body {
 	margin: 20px;
 	color: orange;
 	font-weight: bold;
+}
+
+.changelog-table {
+	width: 100%;
+	display: table;
+}
+
+.changelog-row {
+	width: 100%;
+	display: table-row;
+}
+
+.changelog-cell-left {
+	display: table-cell;
+	border-right: 5px double black;
+	border-top: 5px double black;
+	min-width: 150px;
+	vertical-align: middle;
+}
+
+.changelog-cell-right {
+	display: table-cell;
+	border-top: 5px double black;
+	text-align: left;
+	padding: 25px;
+	vertical-align: middle;
+}
+
+.changelog-date {
+	font-style: italic;
 }

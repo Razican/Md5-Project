@@ -4,7 +4,6 @@ if ( ! function_exists('changelog_table'))
 {
 	function changelog_table()
 	{
-
 		foreach (lang('changelog.table') as $v => $d)
 		{
 			$parse['version']		= $v;

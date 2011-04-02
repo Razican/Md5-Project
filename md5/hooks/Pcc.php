@@ -18,8 +18,8 @@ function language()
 	}
 	else if ($CI->lang->lang() == '')
 	{
-		log_message('debug', 'Redirect to '.$language.$CI->uri->uri_string());
-		redirect($language.$CI->uri->uri_string(), 'location', 302);
+		log_message('debug', 'Redirect to '.$language.'/'.$CI->uri->uri_string());
+		redirect($language.'/'.$CI->uri->uri_string(), 'location', 302);
 	}
 }
 

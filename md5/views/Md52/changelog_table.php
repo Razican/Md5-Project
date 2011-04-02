@@ -1,4 +1,4 @@
-<tr>
-	<th width="50" bgcolor="#FF3300"><font color='white'><?php echo $version ?></font></th>
-	<td style="text-align:left" bgcolor="#FF3300"><font color='white'><?php echo $description ?></font></td>
-</tr>
+<div class="changelog-row">
+						<div class="changelog-cell-left"><?php echo $version; ?></div>
+						<div class="changelog-cell-right"><?php echo $description; ?></div>
+					</div>

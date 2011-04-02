@@ -2,9 +2,10 @@
 
 $lang['changelog.version']		= "Bertsioa";
 $lang['changelog.description']	= "Deskribapena";
+$lang['changelog.desc_long']	= "Aldaketa zerrendak Md5 Project-ek azken bertsioetan izandako aldaketak erakusten ditu";
 
 $lang['changelog.table']		= array(
-	"<font color='lime'>1.2</font>" => " 2011/01/30
+	"<font color='lime'>1.2</font>" => "<div class=\"changelog-date\">2011/01/30</div>
 
 	- Fitxategi-hondakinak ezabatuta; deskarga orria eratzen zutenak.
 	- parsetemplate() funtzioan, functions.php artxiboan soberan zeuden lerroak ezabatuta UTF-8 erabiltzeari esker.
@@ -13,7 +14,7 @@ $lang['changelog.table']		= array(
 	- [FIX] Definitu gabeko aldagaien arazoa konponduta.
 	- [FIX] UTF-8-ren erabilera txertatuta.
 	",
-	"1.1" => " 2010/04/04
+	"1.1" => "<div class=\"changelog-date\">2010/04/04</div>
 
 	- [FIX] Itzulpenean akats batzuk zeuden.
 	- [FIX] Instalatzaileak akats bat zuen.
@@ -24,7 +25,7 @@ $lang['changelog.table']		= array(
 	- Fitxategi guztiak iruzkinduta.
 	- [FIX] Segurtasun arazo bat zegoen fitxategi batzuetan.
 	",
-	"1.0" => " 2009/09/27
+	"1.0" => "<div class=\"changelog-date\">2009/09/27</div>
 
 	- Karaktere kate egile automatikoa eginda.
 	- Proiektuaren izena aldatua. Orain izena \"Md5 Proiektua\" da.
@@ -48,7 +49,7 @@ $lang['changelog.table']		= array(
 	- fitxategiak hobetuta.
 	- Hizkuntza sistema hobetuta.
 	",
-	"RC 1" => " 2009/07/14
+	"RC 1" => "<div class=\"changelog-date\">2009/07/14</div>
 
 	- Irudi guztiak arinduak.
 	- Estilo grafikoa amaitua.
@@ -64,7 +65,7 @@ $lang['changelog.table']		= array(
 	- [FIX] Hizkuntza sistemak arazo larri bat zuen.
 	- Hasiera orrialdeak skin bat dauka.
 	",
-	"Beta 2" => " 2009/07/02
+	"Beta 2" => "<div class=\"changelog-date\">2009/07/02</div>
 
 	- [FIX] Menuak ez zuen ondo funtzionatzen.
 	- [FIX] Desenkriptatzaileak ez zuen funtzionatzen.
@@ -76,7 +77,7 @@ $lang['changelog.table']		= array(
 	- [FIX] Enkriptatzaileak ez zituen letra larriak eta xeheak bereizten.
 	- [FIX] Enkriptazaileak balio errepikatuak gordetzen zituen datu basean.
 	",
-	"Beta 1" => " 2009/06/26 'Hasiera'
+	"Beta 1" => "<div class=\"changelog-date\">2009/06/26</div>
 
 	- [FIX] Menuak ez zituen linkak erakusten.
 	- Programa %100 euskerara, ingelesera eta erderara itzulita.
