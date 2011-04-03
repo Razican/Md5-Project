@@ -5,7 +5,7 @@ $lang['changelog.description']	= "Descripción";
 $lang['changelog.desc_long']	= "La lista de cambios muestra los cambios que ha habido en las últimas versiones de Md5 Project";
 
 $lang['changelog.table']		= array(
-	"<font color='lime'>1.2</font>" => "<div class=\"changelog-date\">30/01/2011</div>
+	"<div style=\"color: lime;\">1.2</div>" => "<div class=\"changelog-date\">30/01/2011</div>
 
 	- Borrados archivos residuales de la página de descargas.
 	- Se borran líneas en la función parsetemplate() de functions.php gracias a la implantación de UTF-8.
@@ -14,7 +14,7 @@ $lang['changelog.table']		= array(
 	- [FIX] Se soluciona el problema de las variables no declaradas.
 	- [FIX] Se implementa el uso de UTF-8.
 	",
-	"1.1" => "<div class=\"changelog-date\">04/04/201</div>
+	"1.1" => "<div class=\"changelog-date\">04/04/2010</div>
 
 	- [FIX] Había algunos errores en la traducción.
 	- [FIX] Había un fallo en el instalador.

@@ -28,7 +28,6 @@ class Home extends CI_Controller {
 		$data['menu']			= $this->load->view('menu', '', TRUE);
 
 		$data['foot']			= $this->load->view('foot', '', TRUE);
-		$data['hidden']			= array('cmd' => '_s-xclick', 'hosted_button_id' => '8255830');
 
 		$this->load->view('home', $data);
 	}

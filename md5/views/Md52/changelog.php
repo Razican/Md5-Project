@@ -11,10 +11,10 @@
 					<?php echo form_close() ?>
 				</div>
 				<div class="content-desc"><?php echo lang('changelog.desc_long'); ?>:</div>
-				<div class="changelog-table">
-					<div class="changelog-row">
-						<div class="changelog-cell-left" style="border-top: none; font-weight: bold;"><?php echo lang('changelog.version'); ?></div>
-						<div class="changelog-cell-right" style="border-top: none; text-align: center; font-weight: bold;"><?php echo lang('changelog.description'); ?></div>
+				<div class="table">
+					<div class="table-row">
+						<div class="table-cell-left" style="min-width: 150px; border-top: none; font-weight: bold;"><?php echo lang('changelog.version'); ?></div>
+						<div class="table-cell-right" style="border-top: none; text-align: center; font-weight: bold;"><?php echo lang('changelog.description'); ?></div>
 					</div>
 					<?php echo changelog_table(); ?>
 				</div>

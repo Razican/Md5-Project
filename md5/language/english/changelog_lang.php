@@ -5,7 +5,7 @@ $lang['changelog.description']	= "Description";
 $lang['changelog.desc_long']	= "The change log shows the changes that have been made to the last versions of Md5 Project";
 
 $lang['changelog.table']		= array(
-	"<font color='lime'>1.2</font>" => "<div class=\"changelog-date\">01/30/2011</div>
+	"<div style=\"color: lime;\">1.2</div>" => "<div class=\"changelog-date\">01/30/2011</div>
 
 	- Deleted residual files which were part of the downloads page.
 	- Deleted some lines in the function parsetemplate() in functions.php thanks to the implementation of UTF-8.

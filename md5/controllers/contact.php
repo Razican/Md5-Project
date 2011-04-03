@@ -16,9 +16,7 @@ class Contact extends CI_Controller {
 		$data['menu']			= $this->load->view('menu', '', TRUE);
 
 		$data['foot']			= $this->load->view('foot', '', TRUE);
-		$data['hidden']			= array('cmd' => '_s-xclick', 'hosted_button_id' => '8255830');
-		
-		$data['contact_table']	= contact_table();
+
 		$this->load->view('contact', $data);
 	}
 	

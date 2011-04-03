@@ -5,7 +5,7 @@ $lang['changelog.description']	= "Deskribapena";
 $lang['changelog.desc_long']	= "Aldaketa zerrendak Md5 Project-ek azken bertsioetan izandako aldaketak erakusten ditu";
 
 $lang['changelog.table']		= array(
-	"<font color='lime'>1.2</font>" => "<div class=\"changelog-date\">2011/01/30</div>
+	"<div style=\"color: lime;\">1.2</div>" => "<div class=\"changelog-date\">2011/01/30</div>
 
 	- Fitxategi-hondakinak ezabatuta; deskarga orria eratzen zutenak.
 	- parsetemplate() funtzioan, functions.php artxiboan soberan zeuden lerroak ezabatuta UTF-8 erabiltzeari esker.

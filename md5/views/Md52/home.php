@@ -6,7 +6,7 @@
 			<div class="content-logo"><?php echo img(array('src'	=> base_url().'styles/images/logo.png', 'id' => 'logo', 'alt' => 'Logo')); ?></div>
 			<div class="content">
 				<div class="paypal-form">
-					<?php echo form_open('https://www.paypal.com/cgi-bin/webscr', '', $hidden); ?>
+					<?php echo form_open('https://www.paypal.com/cgi-bin/webscr', '', array('cmd' => '_s-xclick', 'hosted_button_id' => '8255830')); ?>
 						<?php echo paypal_input(); ?>
 					<?php echo form_close() ?>
 				</div>
