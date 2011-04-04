@@ -1,4 +1,6 @@
 <?php
+ini_set('display_errors', 0);
+
 $root_path = "./../"; //definimos el directorio principal
 
 if (filesize('./../config.php') != 0) //si el config.php está escrito
@@ -8,7 +10,7 @@ if (filesize('./../config.php') != 0) //si el config.php está escrito
 else
 {
 	define('INSIDE', TRUE); //definimos INSIDE
-	define('INSTALL', TRUE); //definimos //INSTALL
+	define('INSTALL', TRUE); //definimos INSTALL
 
 	//indicamos las extensiones preliminares
 	$phpEx	= ".php";

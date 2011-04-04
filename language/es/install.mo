@@ -23,7 +23,7 @@ $lang['changechmod2']	= "Antes de continuar cambia los permisos del archivo conf
 $lang['youcan']			= "Ya puedes usar el programa normalmente, pero, antes elimina los siguientes archivos y carpetas";
 $lang['introduction']	= "Introducción";
 $lang['welcome']		= "¡Bienvenido a la instalación del Proyecto Md5!";
-$lang['desc1']			= "El Proyecto Md5 es un programa que encripta una cadena de caracteres y la mete en una base de datos, para posteriormente desencriptar el hash creado. Actualmente el proyecto recibe soporte <a href=\"http://desencriptador.co.cc\">aquí</a>. La versión 1.2 del programa es muy estable y está acabada. Puede haber modificaciones si recibimos reportes de bugs.";
+$lang['desc1']			= "El Proyecto Md5 es un programa que encripta una cadena de caracteres y la mete en una base de datos, para posteriormente desencriptar el hash creado. Actualmente el proyecto recibe soporte <a href=\"http://md5-project.razican.com/\">aquí</a>. La versión 1.3 del programa es muy estable y está acabada. Puede haber modificaciones si recibimos reportes de bugs.";
 $lang['desc2']			= "El sistema de instalación te guiará a través de la instalación del mismo. Cualquier duda o problema no dudes en contactar con <a href=\"mailto:admin@razican.com\"><em>Razican</em></a>.";
 $lang['desc3']			= "Este programa es un proyecto gratuito. Para comenzar la instalación haz click en el botón [Instalación] del menú superior.";
 $lang['installyes']		= "Instalar";

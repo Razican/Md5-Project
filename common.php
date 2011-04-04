@@ -2,7 +2,7 @@
 if(!defined("INSIDE")){ die("Intento de Hackeo"); } //si alguien intenta acceder desde fuera te dice que has intentado hackear el programa
 
 include('includes/functions'.$phpEx); //incluimos todas las funciones
-define('VERSION','1.2'); //Esta es la versión actual
+define('VERSION','1.3'); //Esta es la versión actual
 define('DEFAULT_LANG', 'es'); //el lenguaje por defecto
 define('TEMPLATE_DIR'     , 'styles/templates'); //definimos el directorio de templates
 $config			= array(); //le decimos que $config será un array

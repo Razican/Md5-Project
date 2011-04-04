@@ -4,7 +4,16 @@ $lang['changelogtitle'] = "Lista de Cambios";
 $lang['Version']     = "Versión";
 $lang['Description'] = "Descripción";
 $lang['changelog']   = array(
-"<font color='lime'>1.2</font>" => " 30/01/2011
+"<font color='lime'>1.3</font>" => " 04/04/2011
+
+- [FIX] Había algunos errores en los textos del instalador.
+- [FIX] Se solucionan varios bugs del desencriptador y encriptador.
+- Se borran diversas funciones en functions.php para ahorrar espacio.
+- Se encriptan los créditos.
+- [FIX] Se traducen correctamente todas las imágenes.
+- [FIX] Se borran imágenes innecesarias.
+",
+"1.2" => " 30/01/2011
 
 - Borrados archivos residuales de la página de descargas.
 - Se borran líneas en la función parsetemplate() de functions.php gracias a la implantación de UTF-8.

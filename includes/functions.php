@@ -34,22 +34,16 @@ function display ($page, $foot = true, $menu = true) //Definimos la funcion
 	echo $DisplayPage; //muestra la pagina
 	die(); //Si hay un error no mostrará nada
 }
-function ReadFromFile($filename) //definimos la funcion
-{
-	$content = @file_get_contents ($filename); //cogemos el contenido del archivo
-	return $content; //retornamos el contenido del archivo
-}
 function gettemplate ($templatename) //definición de la función
 {
 	global $tplEx, $root_path; //variables globales
 
-	$filename = $root_path. TEMPLATE_DIR .'/'. $templatename.$tplEx; //definimos el archivo
-	return ReadFromFile($filename); //retornamos el template
+	$filename	= $root_path. TEMPLATE_DIR .'/'. $templatename.$tplEx; //definimos el archivo
+	$content	= @file_get_contents ($filename); //cogemos el contenido del archivo
+	return $content; //retornamos el template
 }
 function parsetemplate ($template, $array) //definimos la función
 {
-	global $var1, $var2, $phpEx; //ponemos las variables globales
-	
 	return preg_replace('#\{([a-z0-9\-_]*?)\}#Ssie', '( ( isset($array[\'\1\']) ) ? $array[\'\1\'] : \'\' );', $template); //Retornamos el texto
 }
 function includeLang ($filename) //definimos la funcion

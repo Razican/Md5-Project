@@ -4,7 +4,16 @@ $lang['changelogtitle'] = "Aldaketa zerrenda";
 $lang['Version']     = "Bertsioa";
 $lang['Description'] = "Deskribapena";
 $lang['changelog']   = array(
-"<font color='lime'>1.2</font>" => " 2011/01/30
+"<font color='lime'>1.3</font>" => " 2011/04/04
+
+- [FIX] Arazo batzuk zeuden instalatzailearen testuetan.
+- [FIX] Enkriptatzaile eta desenkriptatzailean arazo batzuk konponduta.
+- functions.php artxiboko funtzio batzuk ezabatuta, leku gutxiago hartzeko.
+- Kredituak enkriptatuta.
+- [FIX] Irudi guztiak ongi itzulita.
+- [FIX] Beharrezkoak ez ziren irudiak ezabatuta.
+",
+"1.2" => " 2011/01/30
 
 - Fitxategi-hondakinak ezabatuta; deskarga orria eratzen zutenak.
 - parsetemplate() funtzioan, functions.php artxiboan soberan zeuden lerroak ezabatuta UTF-8 erabiltzeari esker.

@@ -1,4 +1,6 @@
 <?php
+ini_set('display_errors', 0);
+
 if (filesize('config.php') == 0) //si el config.php no está escrito
 { 
 	exit(header('location: install/index.php'));//te lleva a la instalación

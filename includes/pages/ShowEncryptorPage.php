@@ -21,10 +21,11 @@ if (!defined('INSIDE'))
 	$file				= "index".$phpEx."?page=encryptor&"; //este será el archivo
 	$parse['file']		= $file; //le decimos que muestre el archivo
 	$parse['ini']		= "en"; //unas iniciales
-	if (($_POST['characters']) and ($_POST['characters'] != "")) //si recibimos el string y ese string no es nulo
+	$characters			= isset($_POST['characters']) ? $_POST['characters'] : FALSE;  //recojemos la cadena
+	if ($characters) //si ha escrito algúna cadena
 	{
 		$characters	= $_POST['characters']; //le decimos que la variable $characters será la que reciba por el protocolo post
-		$md5	= md5($characters); //la variable md5 ser� la variable characters convertida a md5
+		$md5	= md5($characters); //la variable md5 será la variable characters convertida a md5
 		$md5sel	= doquery("Select `md5` From {{table}} WHERE `md5` = '$md5';", 'decryptor'); //le pedimos que seleccione todos los hashes que sean iguales al que ha pedido
 		$md5sum	= mysql_num_rows($md5sel); //le pedimos que cuente cuantos hashes iguales hay
 		if (($md5sum === 0)) //en caso en el que no haya md5 iguales
