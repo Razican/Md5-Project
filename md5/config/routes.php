@@ -45,7 +45,7 @@ $route['404_override']			= '';
 $route['^es/(.+)$'] = "$1";
 $route['^en/(.+)$'] = "$1";
 $route['^eu/(.+)$'] = "$1";
- 
+
 // '/en' and '/es' URIs -> use default controller
 $route['^es$'] = $route['default_controller'];
 $route['^en$'] = $route['default_controller'];

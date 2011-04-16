@@ -58,7 +58,7 @@ class Install extends CI_Controller {
 			(!$this->input->post('db'))				OR
 			($this->input->post('db') == ''))
 		{
-				
+
 			exit(header("Location: install/ins1/4"));
 		}
 
@@ -69,7 +69,7 @@ class Install extends CI_Controller {
 		$adm_pass	= $this->encrypt->sha1($this->input->post('adm_password'));
 		$prefix		= $this->input->post('prefix');
 		$db			= $this->input->post('db');
-		
+
 		$connection = @mysql_connect($host, $user, $pass);
 		if (!$connection)
 		{

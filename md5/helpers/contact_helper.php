@@ -25,7 +25,7 @@ if ( ! function_exists('contact_table'))
 			{
 				$parse['rank']	= lang('contact.dkn');
 			}
-			
+
 			$worksum			= $data['prog'] + $data['transl'] + $data['design'];
 
 			if ($data['prog'] === 1)
@@ -64,10 +64,10 @@ if ( ! function_exists('contact_table'))
 			{
 				$work			= lang('contact.dkn');
 			}
-			
+
 			$parse['work']		= $work;
 			$parse['nick']		= $data['nick'];
-			
+
 			if ($data['email'] === "N/A")
 			{
 				$parse['email']	= $data['email'];
@@ -76,7 +76,7 @@ if ( ! function_exists('contact_table'))
 			{
 				$parse['email']	= safe_mailto($data['email']);
 			}
-			
+
 			$CI =& get_instance();
 			$contact_table		= isset($contact_table) ? $contact_table : "";
 			$contact_table		.= $CI->load->view('contact_table', $parse, TRUE);

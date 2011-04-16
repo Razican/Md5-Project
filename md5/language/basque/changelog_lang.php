@@ -5,7 +5,16 @@ $lang['changelog.description']	= "Deskribapena";
 $lang['changelog.desc_long']	= "Aldaketa zerrendak Md5 Project-ek azken bertsioetan izandako aldaketak erakusten ditu";
 
 $lang['changelog.table']		= array(
-	"<div style=\"color: lime;\">1.2</div>" => "<div class=\"changelog-date\">2011/01/30</div>
+	"<div style=\"color: lime;\">1.3</div>" => "<div class=\"changelog-date\">2011/04/04</div>
+
+	- [FIX] Arazo batzuk zeuden instalatzailearen testuetan.
+	- [FIX] Enkriptatzaile eta desenkriptatzailean arazo batzuk konponduta.
+	- functions.php artxiboko funtzio batzuk ezabatuta, leku gutxiago hartzeko.
+	- Kredituak enkriptatuta.
+	- [FIX] Irudi guztiak ongi itzulita.
+	- [FIX] Beharrezkoak ez ziren irudiak ezabatuta.
+	",
+	"1.2" => "<div class=\"changelog-date\">2011/01/30</div>
 
 	- Fitxategi-hondakinak ezabatuta; deskarga orria eratzen zutenak.
 	- parsetemplate() funtzioan, functions.php artxiboan soberan zeuden lerroak ezabatuta UTF-8 erabiltzeari esker.

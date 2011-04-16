@@ -34,14 +34,14 @@ class Md5_Lang extends CI_Lang {
 
 		parent::__construct();
 
-		global $CFG, $URI, $RTR;		
+		global $CFG, $URI, $RTR;
 
 		$segment = $URI->segment(1);
 
 		if (isset($this->languages[$segment]))
 		{
 			$language	= $this->languages[$segment];
-			$CFG->set_item('language', $language);			
+			$CFG->set_item('language', $language);
 		}
 		else
 		{
@@ -76,7 +76,7 @@ class Md5_Lang extends CI_Lang {
 		else
 		{
 			return FALSE;
-		}		
+		}
 	}
 
 	function switch_uri($lang)
@@ -123,7 +123,7 @@ class Md5_Lang extends CI_Lang {
 	}
 
 	function default_lang()
-	{		
+	{
 		$lang		= array_keys ($this->languages);
 		$language	= $lang[0];
 

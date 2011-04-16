@@ -1,6 +1,7 @@
 syntax: glob
 *redcar*
 .DS_Store
+*geany*
 
 syntax: regexp
 md5/cache/(?!index\.html|\.htaccess)

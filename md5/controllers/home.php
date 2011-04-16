@@ -22,7 +22,7 @@ class Home extends CI_Controller {
 		}
 */
 
-		$this->lang->load('home');		
+		$this->lang->load('home');
 
 		$data['head']			= $this->load->view('header', '', TRUE);
 		$data['menu']			= $this->load->view('menu', '', TRUE);

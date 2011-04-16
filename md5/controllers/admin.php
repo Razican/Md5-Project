@@ -13,7 +13,7 @@ class Admin extends CI_Controller {
 		$this->load->helper('admin');
 
 		if((!$this->input->post('username')) OR (!$this->input->post('password')))
-		{			
+		{
 			if($this->session->userdata('logged_in'))
 			{
 
@@ -21,7 +21,7 @@ class Admin extends CI_Controller {
 				$data['menu']			= $this->load->view('admin/menu', '', TRUE);
 
 				$data['foot']			= $this->load->view('admin/foot', '', TRUE);
-				
+
 				$data['hidden']			= array('cmd' => '_s-xclick', 'hosted_button_id' => '8255830');
 
 				$this->load->view('admin/home', $data);
@@ -38,14 +38,14 @@ class Admin extends CI_Controller {
 		}
 		else
 		{
-		
+
 			if (($this->config->item('admin_password') == sha1($this->input->post('password', TRUE))) && ($this->input->post('username', TRUE) === $this->config->item('admin_username')))
 			{
 				if (!$this->input->post('remember'))
 				{
 					$this->config->set_item('sess_expire_on_close', TRUE);
 				}
-				$userdata	= array(					
+				$userdata	= array(
 					'logged_in' => TRUE
 					);
 

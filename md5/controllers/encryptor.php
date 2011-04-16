@@ -9,7 +9,7 @@ class Encryptor extends CI_Controller {
 			redirect('encryptor');
 		}
 
-		$this->lang->load('encryptor');		
+		$this->lang->load('encryptor');
 
 		$data['head'] = $this->load->view('header', '', TRUE);
 		$data['menu'] = $this->load->view('menu', '', TRUE);
@@ -19,7 +19,7 @@ class Encryptor extends CI_Controller {
 
 		$this->load->view('encryptor', $data);
 	}
-	
+
 	public function encrypt()
 	{
 		if (!$this->input->post('string'))
@@ -28,7 +28,7 @@ class Encryptor extends CI_Controller {
 		}
 		$this->lang->load('encryptor');
 		$this->load->model('encrypt_m');
-		
+
 		$data['head']			= $this->load->view('header', '', TRUE);
 		$data['menu']			= $this->load->view('menu', "", TRUE);
 		$data['hidden']			= array('cmd' => '_s-xclick', 'hosted_button_id' => '8255830');

@@ -62,7 +62,7 @@ if ( ! function_exists('hash_submit'))
 			'alt'			=> lang('decryptor.action')
 		);
 		$hash_submit = form_input($hash_submit);
-		
+
 		return $hash_submit;
 	}
 }
@@ -105,10 +105,10 @@ if ( ! function_exists('copyright'))
 			'src'	=> 'http://i.creativecommons.org/l/by-nc-nd/3.0/80x15.png',
 			'alt'	=> 'Creative Commons License'
 		);
-		
+
 		$copy_img	= img($img);
 		$copyright	= anchor($link, $copy_img);
-		
+
 		return $copyright;
 	}
 }

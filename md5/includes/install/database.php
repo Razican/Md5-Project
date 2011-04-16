@@ -58,5 +58,4 @@
 	$QryUpdateTable	.= "('dfde', '404d5969805e5acb4736b8acb734abbf'),";
 	$QryUpdateTable	.= "('jffghf', 'c742a900bed006075799bedf2dcb8809'),";
 	$QryUpdateTable	.= "('lol', '9cdfb439c7876e703e307864c9167a15');";
-	//Fin
-?>
+//Fin

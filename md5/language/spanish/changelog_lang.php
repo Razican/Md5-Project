@@ -5,7 +5,16 @@ $lang['changelog.description']	= "Descripción";
 $lang['changelog.desc_long']	= "La lista de cambios muestra los cambios que ha habido en las últimas versiones de Md5 Project";
 
 $lang['changelog.table']		= array(
-	"<div style=\"color: lime;\">1.2</div>" => "<div class=\"changelog-date\">30/01/2011</div>
+	"<div style=\"color: lime;\">1.3</div>" => "<div class=\"changelog-date\">04/04/2011</div>
+
+	- [FIX] Había algunos errores en los textos del instalador.
+	- [FIX] Se solucionan varios bugs del desencriptador y encriptador.
+	- Se borran diversas funciones en functions.php para ahorrar espacio.
+	- Se encriptan los créditos.
+	- [FIX] Se traducen correctamente todas las imágenes.
+	- [FIX] Se borran imágenes innecesarias.
+	",
+	"1.2" => "<div class=\"changelog-date\">30/01/2011</div>
 
 	- Borrados archivos residuales de la página de descargas.
 	- Se borran líneas en la función parsetemplate() de functions.php gracias a la implantación de UTF-8.
@@ -95,6 +104,6 @@ $lang['changelog.table']		= array(
 	"
 );
 
-	
+
 /* End of file changelog_lang.php */
 /* Location: ./application/language/spanish/changelog_lang.php */

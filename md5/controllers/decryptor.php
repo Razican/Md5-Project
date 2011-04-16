@@ -19,7 +19,7 @@ class Decryptor extends CI_Controller {
 
 		$this->load->view('decryptor', $data);
 	}
-	
+
 	public function decrypt()
 	{
 		if (!$this->input->post('hash'))
@@ -37,7 +37,7 @@ class Decryptor extends CI_Controller {
 
 		$hash					= $this->input->post('hash');
 		$data['result']			= $this->decrypt_m->hash($hash);
-		
+
 		$this->load->view('decrypt', $data);
 	}
 }

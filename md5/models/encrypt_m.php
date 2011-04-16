@@ -8,7 +8,7 @@ Class Encrypt_m extends CI_Model {
 		$query		= $this->db->get_where($this->db->dbprefix('decryptor'), array('hash' => $hash), '1');
 		if ($query->num_rows() === 0)
 		{
-			$this->db->insert($this->db->dbprefix('decryptor'), array('string' => $str,'hash' => $hash)); 
+			$this->db->insert($this->db->dbprefix('decryptor'), array('string' => $str,'hash' => $hash));
 		}
 		return $hash;
 	}

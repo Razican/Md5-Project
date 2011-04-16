@@ -3,7 +3,7 @@
 Class Footer extends CI_Model {
 
 	public function total_hashes()
-	{		
+	{
 		$query			= $this->db->get($this->db->dbprefix('decryptor'));
 		$total_hashes	= $query->num_rows();
 

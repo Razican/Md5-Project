@@ -9,13 +9,13 @@ if ( ! function_exists('login_input'))
 			'name'			=> 'username',
 		);
 		$username_input	= form_input($username_input);
-		
+
 		$password_input	= array(
 			'type'			=> 'password',
 			'name'			=> 'password',
 		);
 		$password_input	= form_input($password_input);
-		
+
 		$submit_input	= array(
 			'type'			=> 'submit',
 			'name'			=> 'submit',
