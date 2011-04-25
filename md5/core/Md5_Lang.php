@@ -5,7 +5,7 @@
  *
  * @subpackage	Libraries
  * @author		Jérôme Jaglale
- * @category	Libraries
+ * @category	Language
  * @link		http://maestric.com/en/doc/php/codeigniter_i18n
  */
 
@@ -31,9 +31,7 @@ class Md5_Lang extends CI_Lang {
 
 	function __construct()
 	{
-
 		parent::__construct();
-
 		global $CFG, $URI, $RTR;
 
 		$segment = $URI->segment(1);
