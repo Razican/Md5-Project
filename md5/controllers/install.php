@@ -91,7 +91,7 @@ class Install extends CI_Controller {
 		$config_data		.= '$config[\'admin_password\']		= "'. $adm_pass .'";\n\n';
 		$config_data		.= '/* End of file custom.php */\n/* Location: ./system/application/config/custom.php */';
 
-		$db_data			= '<?php  if ( ! defined(\'BASEPATH\')) exit(\'No direct script access allowed\');\n\n';
+		$db_data			= '<?php if ( ! defined(\'BASEPATH\')) exit(\'No direct script access allowed\');\n\n';
 		$db_data			.= '$active_group = "default";\n';
 		$db_data			.= '$active_record = TRUE;\n\n';
 		$db_data			.= '$db[\'default\'][\'hostname\'] = "'. $host .'";\n';

@@ -5,21 +5,21 @@
 	$QryUpdateDB	.= "ALTER TABLE ".$this->db->dbprefix('decryptor')." CHANGE `characters` `string` VARCHAR( 50 ) CHARACTER SET latin1 COLLATE latin1_spanish_ci NOT NULL;"
 	$QryUpdateDB	.= "ALTER TABLE ".$this->db->dbprefix('decryptor')." CHANGE `md5` `hash` CHAR( 32 ) CHARACTER SET latin1 COLLATE latin1_spanish_ci NOT NULL;"
 	$QryUpdateDB	.= "ALTER TABLE ".$this->db->dbprefix('decryptor')." ADD UNIQUE `UNIQUE` ( `ID` , `hash` ( 32 ) , `string` ( 50 ) );"
-	$QryUpdateDB	.= "ALTER TABLE ".$this->db->dbprefix('decryptor')." ENGINE =  InnoDB DEFAULT CHARACTER SET latin1 COLLATE latin1_spanish_ci"
+	$QryUpdateDB	.= "ALTER TABLE ".$this->db->dbprefix('decryptor')." ENGINE = InnoDB DEFAULT CHARACTER SET latin1 COLLATE latin1_spanish_ci"
 	$QryUpdateDB	.= "FLUSH TABLE ".$this->db->dbprefix('decryptor').";"
 	$QryUpdateDB	.= "OPTIMIZE TABLE ".$this->db->dbprefix('decryptor').";"
 
 	//Droping table
-	$QryDropTable   = "DROP TABLE IF EXISTS ".$this->db->dbprefix('decryptor').";";
+	$QryDropTable  = "DROP TABLE IF EXISTS ".$this->db->dbprefix('decryptor').";";
 
 	//Table creation
-	$QryTabledecryptor         = "CREATE TABLE IF NOT EXISTS ".$this->db->dbprefix('decryptor')." (";
-	$QryTabledecryptor        .= "`ID` bigint(20) unsigned NOT NULL AUTO_INCREMENT,";
-	$QryTabledecryptor        .= "`string` varchar(50) COLLATE latin1_spanish_ci NOT NULL,";
-	$QryTabledecryptor        .= "`hash` char(32) COLLATE latin1_spanish_ci NOT NULL,";
-	$QryTabledecryptor        .= "PRIMARY KEY (`ID`),";
-	$QryTabledecryptor        .= "UNIQUE KEY `UNIQUE` (`ID`,`hash`,`string`)";
-	$QryTabledecryptor        .= ") ENGINE=InnoDB  DEFAULT CHARSET=latin1 COLLATE=latin1_spanish_ci ROW_FORMAT=DYNAMIC AUTO_INCREMENT=1 ;";
+	$QryTabledecryptor     = "CREATE TABLE IF NOT EXISTS ".$this->db->dbprefix('decryptor')." (";
+	$QryTabledecryptor    .= "`ID` bigint(20) unsigned NOT NULL AUTO_INCREMENT,";
+	$QryTabledecryptor    .= "`string` varchar(50) COLLATE latin1_spanish_ci NOT NULL,";
+	$QryTabledecryptor    .= "`hash` char(32) COLLATE latin1_spanish_ci NOT NULL,";
+	$QryTabledecryptor    .= "PRIMARY KEY (`ID`),";
+	$QryTabledecryptor    .= "UNIQUE KEY `UNIQUE` (`ID`,`hash`,`string`)";
+	$QryTabledecryptor    .= ") ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_spanish_ci ROW_FORMAT=DYNAMIC AUTO_INCREMENT=1 ;";
 	//Fin
 
 	//actualización

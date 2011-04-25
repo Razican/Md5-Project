@@ -2,7 +2,7 @@
 
 <?php echo $menu ?>
 
-		<table width="548" border="0" height="413"  background="<?php echo skin_path(); ?>images/indextable.png">
+		<table width="548" border="0" height="413" background="<?php echo skin_path(); ?>images/indextable.png">
 			<tbody>
 			<tr>
 				<td colspan="3" height="130"><b><center><?php echo show_logo(); ?></center></b></td>

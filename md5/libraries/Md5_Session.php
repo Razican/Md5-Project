@@ -1,4 +1,4 @@
-<?php  if ( ! defined('BASEPATH')) exit('No direct script access allowed');
+<?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
 /**
  * Md5_Session Class
@@ -11,12 +11,12 @@
 
 class Md5_Session extends CI_Session {
 
-    function __construct()
-    {
-        parent::__construct();
-    }
+  function __construct()
+  {
+    parent::__construct();
+  }
 
-   	/**
+  	/**
 	 * Write the session cookie
 	 *
 	 * @access	public
