@@ -4,7 +4,7 @@ if ( ! function_exists('contact_table'))
 {
 	function contact_table()
 	{
-		require_once(APPPATH .'/includes/vars'.EXT);
+		require_once(APPPATH .'/includes/vars.php');
 
 		foreach ($staff as $n => $data)
 		{
