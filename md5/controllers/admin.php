@@ -30,7 +30,7 @@ class Admin extends CI_Controller {
 			{
 				$data['head']			= $this->load->view('header', '', TRUE);
 				$data['menu']			= $this->load->view('menu', '', TRUE);
-
+				$data['hidden']			= array('cmd' => '_s-xclick', 'hosted_button_id' => '8255830');
 				$data['foot']			= $this->load->view('admin/foot', '', TRUE);
 
 				$this->load->view('admin/login', $data);
@@ -59,6 +59,19 @@ class Admin extends CI_Controller {
 				//redirect('admin/error', 'location', 302);
 			}
 		}
+	}
+
+	public function logout()
+	{
+		if($this->session->userdata('logged_in'))
+		{
+			$this->session->sess_destroy();
+		}
+		else
+		{
+			log_message('error', 'User with IP '.$this->input->ip_address().' has tried to enter /admin/logout without loggin in.');
+		}
+		redirect('/');
 	}
 
 	public function error()

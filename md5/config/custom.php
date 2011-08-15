@@ -8,7 +8,7 @@ $config['cookie_domain']	= '127.0.0.1';
 $config['cookie_path']		= '/md5';
 
 $config['admin_username']	= 'admin';
-$config['admin_password']	= '7110eda4d09e062aa5e4a390b0a572ac0d2c0220';
+$config['admin_password']	= '8cb2237d0679ca88db6464eac60da96345513964';/*12345*/
 
 $config['admin-link']		= TRUE;
 

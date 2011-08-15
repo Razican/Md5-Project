@@ -1,5 +1,7 @@
 <?php
 
+date_default_timezone_set('UTC');
+
 /*
  *---------------------------------------------------------------
  * APPLICATION ENVIRONMENT
@@ -58,7 +60,7 @@ if (defined('ENVIRONMENT'))
  * as this file.
  *
  */
-	$system_path = 'system';
+	$system_path = 'engine';
 
 /*
  *---------------------------------------------------------------
