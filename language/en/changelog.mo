@@ -6,6 +6,7 @@ $lang['Description'] = "Description";
 $lang['changelog']   = array(
 "<font color='lime'>1.4</font>" => " 08/16/2011
 
+- Created HashPack generator.
 - [FIX]The decryptor would never try to decrypt uppercaase hashes.
 - [FIX]Application validated by the W3C.
 - [FIX]Deleted the option in the decriptor which would search for more than one hash.

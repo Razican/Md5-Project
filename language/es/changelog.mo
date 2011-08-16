@@ -6,6 +6,7 @@ $lang['Description'] = "Descripción";
 $lang['changelog']   = array(
 "<font color='lime'>1.4</font>" => " 16/08/2011
 
+- Se crea un generador de Packs de Hashes.
 - [FIX]El desencriptador no desencriptaba hashes en mayusculas.
 - [FIX]La W3C da por bueno el código.
 - [FIX]Se borra la opción en el desencriptador de que aparezca más de un hash.

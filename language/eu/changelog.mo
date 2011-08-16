@@ -6,6 +6,7 @@ $lang['Description'] = "Deskribapena";
 $lang['changelog']   = array(
 "<font color='lime'>1.4</font>" => " 2011/08/16
 
+- Hash paketeak eratzeko sistema eginda.
 - [FIX]Desenkriptatzaileak ez zituen letra larriz idatzitako hashak desenkriptatzen.
 - [FIX]W3C erakundeak kodea balioztatu du.
 - [FIX]Desenkriptatzaileak hash bat baino gehiago bilatzen zuen.
