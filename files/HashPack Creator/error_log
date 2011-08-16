@@ -1,0 +1,5 @@
+[16-Aug-2011 21:17:16] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/md5/files/HashPack Creator/md5.php:69) in /var/www/md5/files/HashPack Creator/md5.php on line 104
+[16-Aug-2011 21:27:02] PHP Parse error:  syntax error, unexpected T_IF in /var/www/md5/files/HashPack Creator/write.php on line 7
+[16-Aug-2011 21:28:53] PHP Parse error:  syntax error, unexpected '*' in /var/www/md5/files/HashPack Creator/write.php on line 8
+[16-Aug-2011 21:29:26] PHP Warning:  mkdir() [<a href='http://php.net/docsfunction.mkdir'>function.mkdir</a>]: File exists in /var/www/md5/files/HashPack Creator/md5.php on line 45
+[16-Aug-2011 21:29:26] PHP Warning:  mkdir() [<a href='http://php.net/docsfunction.mkdir'>function.mkdir</a>]: File exists in /var/www/md5/files/HashPack Creator/md5.php on line 46
