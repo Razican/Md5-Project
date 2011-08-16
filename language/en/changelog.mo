@@ -4,8 +4,9 @@ $lang['changelogtitle'] = "Change Log";
 $lang['Version']     = "Version";
 $lang['Description'] = "Description";
 $lang['changelog']   = array(
-"<font color='lime'>1.4</font>" => " No date
+"<font color='lime'>1.4</font>" => " 08/16/2011
 
+- [FIX]The decryptor would never try to decrypt uppercaase hashes.
 - [FIX]Application validated by the W3C.
 - [FIX]Deleted the option in the decriptor which would search for more than one hash.
 - New updater.

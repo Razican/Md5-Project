@@ -19,7 +19,7 @@ if (!defined('INSIDE'))
 	$file = "index.php?page=decryptor&"; // este es el archivo
 	$parse['file']	= $file; // lo diremos que lo muestre
 	$parse['ini']	= "de"; //unas iniciales
-	$md5			= isset($_POST['md5']) ? $_POST['md5'] : FALSE; //recojemos el hash
+	$md5			= isset($_POST['md5']) ? strtolower($_POST['md5']) : FALSE; //recojemos el hash
 	if ($md5) //si ha escrito algún hash
 	{
 		$parse['md5']	=	$md5; //le decimos que el hash que debe mostrar en el documento es el que ha recogido
@@ -27,8 +27,7 @@ if (!defined('INSIDE'))
 		$charsel = doquery("Select `characters` From {{table}} WHERE `md5` = '$md5' limit 1;", "decryptor"); //seleccionamos las cadenas de caracteres
 		$characters	= mysql_fetch_array($charsel); //sacamos las cadenas de caracteres
 		$charsum = mysql_num_rows($charsel); // contamos las líneas de caracteres
-		$length = strlen($md5); //miramos la longitud del string
-		if((preg_match("([0-9a-fA-F]{32})",$md5) and ($length = 32))) //si tiene 32 caracteres de largo
+		if((preg_match("([0-9a-f]{32})",$md5) and (strlen($md5) === 32))) //si tiene 32 caracteres de largo
 		{
 			if ($charsum === 1) //si hay algún hash en la base de datos
 			{

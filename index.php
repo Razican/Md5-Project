@@ -1,8 +1,6 @@
 <?php
-ini_set('display_errors', 1);
-error_reporting(E_ALL);
-/*ini_set('display_errors', 0);
-error_reporting(0);*/
+ini_set('display_errors', 0);
+error_reporting(0);
 
 if ((filesize('config.php') === 0) OR (file_exists('install/update.php'))) //si el config.php no está escrito
 {
