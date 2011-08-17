@@ -10,9 +10,12 @@ elseif (file_exists('install')) //si existe el directorio de instalación
 {
 	function delete_install()
 	{
-		$files = scandir('install');
-		foreach ($files as $file){ if ( ! @unlink($file)){ return FALSE; }}
-		return rmdir('install');
+		if (strnatcmp(phpversion(),'5.0.4') >= 0)
+		{
+			$files = scandir('install');
+			foreach ($files as $file){ if ( ! @unlink($file)){ return FALSE; }}
+			return rmdir('install');
+		}
 	}
 
 	if ( ! delete_install()) //y no se puede borrar

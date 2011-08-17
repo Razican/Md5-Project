@@ -4,8 +4,9 @@ $lang['changelogtitle'] = "Change Log";
 $lang['Version']     = "Version";
 $lang['Description'] = "Description";
 $lang['changelog']   = array(
-"<font color='lime'>1.4</font>" => " 08/16/2011
+"<font color='lime'>1.4</font>" => " 08/17/2011
 
+- [FIX]Added a security filter for previus versions of PHP.
 - Created HashPack generator.
 - [FIX]The decryptor would never try to decrypt uppercaase hashes.
 - [FIX]Application validated by the W3C.

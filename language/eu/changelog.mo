@@ -4,8 +4,9 @@ $lang['changelogtitle'] = "Aldaketa zerrenda";
 $lang['Version']     = "Bertsioa";
 $lang['Description'] = "Deskribapena";
 $lang['changelog']   = array(
-"<font color='lime'>1.4</font>" => " 2011/08/16
+"<font color='lime'>1.4</font>" => " 2011/08/17
 
+- [FIX]PHP bertsio zaharrentzako segurdasun iragazkia eginda.
 - Hash paketeak eratzeko sistema eginda.
 - [FIX]Desenkriptatzaileak ez zituen letra larriz idatzitako hashak desenkriptatzen.
 - [FIX]W3C erakundeak kodea balioztatu du.

@@ -16,7 +16,11 @@ if(!defined("INSIDE")){ die("Intento de Hackeo"); } //si alguien intenta acceder
 	foreach($lang['changelog'] as $number => $text) //le explicamos como tieneque tratar el array del changelog
 	{
 		$parse['version_number'] = $number; //las versiones serán $number
-		$parse['description'] = nl2br($text, FALSE); //las características de las versiones serán $text
+		if (strnatcmp(phpversion(),'5.3.0') >= 0)	//las características de las versiones serán $text
+			$parse['description'] = nl2br($text, FALSE);
+		else
+			$parse['description'] = nl2br($text);
+
 		$body .= parsetemplate(gettemplate('changelog_table'), $parse); //le decimos que por cada versión actualice el template
 	}
 	$parse['table'] = "<table width=\"603\" style=\"border: 1px solid #000000;\" cellspacing=\"0\"><tr>
