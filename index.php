@@ -2,10 +2,12 @@
 ini_set('display_errors', 0);
 error_reporting(0);
 
+if (strnatcmp(phpversion(),'4.3.0') <= 0)
+	die('Necesitas una versión de PHP posterior a la 4.3.0 para hacer funcionar el programa.');
+
 if ((filesize('config.php') === 0) OR (file_exists('install/update.php'))) //si el config.php no está escrito
-{
 	exit(header('location: install'));//te lleva a la instalación
-}
+
 elseif (file_exists('install')) //si existe el directorio de instalación
 {
 	function delete_install()
