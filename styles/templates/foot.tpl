@@ -6,8 +6,8 @@
 <td width="16" style="background: url(styles/images/menuright.png) no-repeat">&nbsp;</td>
 			</tr></table>
 		<br>
-		<div style="margin: auto; width: 210px; height: 75px; opacity: 0.5; border-radius: 10px; background-color: white;"></div>
-		<div style="margin: auto; position: relative; bottom: 75px;"><a href="http://www.razican.com/" title="El Blog de Razican"><img src="http://www.razican.com/wp-content/themes/dfblog/images/logo.png" title="El Blog de Razican" alt="El Blog de Razican"></a></div>
+		<div style="margin: auto auto -50px; width: 210px; height: 75px; opacity: 0.5; border-radius: 10px; background-color: white;"></div>
+		<div style="margin: auto auto -50px; position: relative; bottom: 25px;"><a href="http://www.razican.com/" title="El Blog de Razican"><img src="http://www.razican.com/wp-content/themes/dfblog/images/logo.png" title="El Blog de Razican" alt="El Blog de Razican"></a></div>
 		</center>
 	</body>
 </html>

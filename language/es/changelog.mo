@@ -4,7 +4,7 @@ $lang['changelogtitle'] = "Lista de Cambios";
 $lang['Version']     = "Versión";
 $lang['Description'] = "Descripción";
 $lang['changelog']   = array(
-"<font color='lime'>1.4</font>" => " 17/08/2011
+"<font color='lime'>1.4</font>" => " 18/08/2011
 
 - [FIX]Se añade un filtro de seguridad para versiones antiguas de PHP.
 - Se crea un generador de Packs de Hashes.
