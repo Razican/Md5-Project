@@ -2,6 +2,9 @@
 ini_set('display_errors', 0);
 error_reporting(0);
 
+if (strnatcmp(phpversion(),'4.3.0') <= 0)
+	die('Necesitas una versión de PHP posterior a la 4.3.0 para hacer funcionar el programa.');
+
 $root_path = "./../"; //definimos el directorio principal
 
 if ((filesize($root_path.'config.php') != 0) && ( ! file_exists('update.php'))) //si el config.php está escrito
