@@ -1,9 +1,0 @@
-syntax: glob
-*redcar*
-.DS_Store
-*geany*
-*error_log*
-
-syntax: regexp
-md5/cache/(?!index\.html|\.htaccess)
-md5/logs/(?!index\.html)
