@@ -12,7 +12,7 @@
 				</div>
 				<div class="content-desc"><?php echo lang('home.description'); ?>:</div>
 				<div class="home-button"><input type="image" src="<?php echo skin_path(); ?>images/<?php echo $this->lang->lang(); ?>/encryptor.png" alt="<?php echo lang('home.encryptor'); ?>" onClick="top.location.href='<?php echo $this->lang->lang(); ?>/encryptor'" ></div>
-				<div class="home-button"><input type="image" src="<?php echo skin_path(); ?>images/<?php echo $this->lang->lang(); ?>/decryptor.png" alt="<?php echo lang('home.encryptor'); ?>" onClick="top.location.href='<?php echo $this->lang->lang(); ?>/encryptor'" ></div>
+				<div class="home-button"><input type="image" src="<?php echo skin_path(); ?>images/<?php echo $this->lang->lang(); ?>/decryptor.png" alt="<?php echo lang('home.decryptor'); ?>" onClick="top.location.href='<?php echo $this->lang->lang(); ?>/decryptor'" ></div>
 			</div>
 		</div>
 
