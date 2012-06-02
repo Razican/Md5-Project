@@ -19,6 +19,7 @@ class Admin extends CI_Controller {
 
 				$data['head']			= $this->load->view('header', '', TRUE);
 				$data['menu']			= $this->load->view('admin/menu', '', TRUE);
+				$data['alerts']			= $this->_get_alerts();
 
 				$data['foot']			= $this->load->view('admin/foot', '', TRUE);
 
@@ -77,6 +78,16 @@ class Admin extends CI_Controller {
 	public function error()
 	{
 		echo "Ha ocurrido un error";
+	}
+
+	private function _get_alerts()
+	{
+		$alerts	= '';
+		$current_version	= file_get_contents('http://md5-project.razican.com/current.php');
+		if(strcmp($current_version, $this->config->item('version')) > 0)
+			$alerts .= lang('admin.updates');
+
+		return $alerts;
 	}
 }
 

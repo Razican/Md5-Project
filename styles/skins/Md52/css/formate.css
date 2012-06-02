@@ -137,11 +137,21 @@ body {
 	border-radius: 15px 15px 0px 0px;
 }
 
+.green
+{
+	background-color: green;
+}
+
+.red
+{
+	background-color: red;
+}
+
 .settings-summary {
 	width: 100%;
 	min-height: 50px;
 	border-radius: 0px 0px 15px 15px;
-	background-color: red;
+	background-color: blue;
 }
 
 .menu-margin {
