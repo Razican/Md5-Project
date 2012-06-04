@@ -1,6 +1,6 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class Changelog extends CI_Controller {
+class Changelog extends Md5_Controller {
 
 	public function index()
 	{

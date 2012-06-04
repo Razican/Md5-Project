@@ -1,6 +1,6 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class Install extends CI_Controller {
+class Install extends Md5_Controller {
 
 	public function index()
 	{

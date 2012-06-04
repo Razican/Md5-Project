@@ -1,6 +1,6 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class Encryptor extends CI_Controller {
+class Encryptor extends Md5_Controller {
 
 	public function index()
 	{

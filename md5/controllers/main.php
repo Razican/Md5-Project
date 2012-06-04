@@ -1,6 +1,6 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class Home extends CI_Controller {
+class Main extends Md5_Controller {
 
 	public function index()
 	{
@@ -34,5 +34,5 @@ class Home extends CI_Controller {
 }
 
 
-/* End of file home.php */
-/* Location: ./application/controllers/home.php */
+/* End of file main.php */
+/* Location: ./application/controllers/main.php */
