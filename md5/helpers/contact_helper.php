@@ -6,6 +6,8 @@ if ( ! function_exists('contact_table'))
 	{
 		require_once(APPPATH .'/includes/vars.php');
 
+		if( ! isset($staff)) return FALSE;
+
 		foreach ($staff as $n => $data)
 		{
 

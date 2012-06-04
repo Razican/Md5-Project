@@ -11,6 +11,7 @@ class Admin extends Md5_Controller {
 
 		$this->lang->load('admin');
 		$this->load->helper('admin');
+		$this->load->library('admlib');
 
 		if((!$this->input->post('username')) OR (!$this->input->post('password')))
 		{
@@ -19,7 +20,11 @@ class Admin extends Md5_Controller {
 
 				$data['head']			= $this->load->view('header', '', TRUE);
 				$data['menu']			= $this->load->view('admin/menu', '', TRUE);
-				$data['alerts']			= $this->_get_alerts();
+				$data['alerts']			= $this->admlib->get_alerts();
+				$data['settings']		= array(
+											'skin'			=> $this->config->item('skin'),
+											'admin-link'	=> lang('admin.link_'.$this->config->item('admin-link')),
+											'debug'			=> lang('admin.debug_'.$this->config->item('debug')));
 
 				$data['foot']			= $this->load->view('admin/foot', '', TRUE);
 
@@ -57,6 +62,7 @@ class Admin extends Md5_Controller {
 			else
 			{
 				echo "Pass o user mal";
+				//Guardar en flashdata el error
 				//redirect('admin/error', 'location', 302);
 			}
 		}
@@ -78,16 +84,6 @@ class Admin extends Md5_Controller {
 	public function error()
 	{
 		echo "Ha ocurrido un error";
-	}
-
-	private function _get_alerts()
-	{
-		$alerts	= '';
-		$current_version	= file_get_contents('http://md5-project.razican.com/current.php');
-		if(strcmp($current_version, $this->config->item('version')) > 0)
-			$alerts .= lang('admin.updates');
-
-		return $alerts;
 	}
 }
 

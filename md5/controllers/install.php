@@ -2,6 +2,8 @@
 
 class Install extends Md5_Controller {
 
+/* El instalador no es funcional, y no se pretende que lo sea en un corto espacio de tiempo */
+
 	public function index()
 	{
 		if($this->uri->segment(3))
