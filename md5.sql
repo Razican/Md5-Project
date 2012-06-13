@@ -1,13 +1,14 @@
 -- phpMyAdmin SQL Dump
--- version 3.3.10deb1
+-- version 3.4.10.1deb1
 -- http://www.phpmyadmin.net
 --
 -- Servidor: localhost
--- Tiempo de generación: 21-08-2011 a las 10:14:31
--- Versión del servidor: 5.1.54
--- Versión de PHP: 5.3.5-1ubuntu7.2
+-- Tiempo de generación: 13-06-2012 a las 23:45:17
+-- Versión del servidor: 5.5.24
+-- Versión de PHP: 5.3.10-1ubuntu3.1
 
 SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
+SET time_zone = "+00:00";
 
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
@@ -24,7 +25,7 @@ SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
 --
 -- Estructura de tabla para la tabla `decryptor`
 --
--- Creación: 21-08-2011 a las 12:13:48
+-- Creación: 12-06-2012 a las 09:29:34
 --
 
 DROP TABLE IF EXISTS `decryptor`;
@@ -34,13 +35,14 @@ CREATE TABLE IF NOT EXISTS `decryptor` (
   `hash` char(32) NOT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `string` (`string`,`hash`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 ROW_FORMAT=COMPACT AUTO_INCREMENT=35 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 ROW_FORMAT=COMPACT AUTO_INCREMENT=37 ;
 
 --
--- Volcar la base de datos para la tabla `decryptor`
+-- Volcado de datos para la tabla `decryptor`
 --
 
 INSERT INTO `decryptor` (`id`, `string`, `hash`) VALUES
+(36, '0477f0c4825b566f1a239d6d9c73542a', '49bd7c22f5ae583b06eb58e1f9935bd0'),
 (1, 'ads', '2deb000b57bfac9d72c14d4ed967b572'),
 (2, 'boniato', '9edea89ac8ed7884999e6cb020b426d3'),
 (3, 'carlos', 'dc599a9972fde3045dab59dbd1ae170b'),
@@ -58,6 +60,7 @@ INSERT INTO `decryptor` (`id`, `string`, `hash`) VALUES
 (15, 'jffghf', 'c742a900bed006075799bedf2dcb8809'),
 (16, 'juan', 'a94652aa97c7211ba8954dd15a3cf838'),
 (17, 'jupiter', '27a5148ea0fbddae22d902bea9a19531'),
+(35, 'kaxo', '0477f0c4825b566f1a239d6d9c73542a'),
 (18, 'kjjkm', '024041d805c086e9b1bfd7d82d72b22f'),
 (19, 'kk', 'dc468c70fb574ebd07287b38d0d0676d'),
 (20, 'KoSs', '18600b5273b77470bb58100bad764d6e'),
@@ -81,14 +84,14 @@ INSERT INTO `decryptor` (`id`, `string`, `hash`) VALUES
 --
 -- Estructura de tabla para la tabla `sessions`
 --
--- Creación: 21-08-2011 a las 12:14:12
--- Última actualización: 21-08-2011 a las 12:14:12
+-- Creación: 13-06-2012 a las 21:45:01
+-- Última actualización: 13-06-2012 a las 21:45:01
 --
 
 DROP TABLE IF EXISTS `sessions`;
 CREATE TABLE IF NOT EXISTS `sessions` (
   `session_id` varchar(40) CHARACTER SET latin1 NOT NULL DEFAULT '0',
-  `ip_address` varchar(16) CHARACTER SET latin1 NOT NULL DEFAULT '0',
+  `ip_address` varchar(45) NOT NULL DEFAULT '0',
   `user_agent` varchar(120) CHARACTER SET latin1 DEFAULT NULL,
   `last_activity` int(10) unsigned NOT NULL DEFAULT '0',
   `user_data` text CHARACTER SET latin1 NOT NULL,
@@ -96,10 +99,6 @@ CREATE TABLE IF NOT EXISTS `sessions` (
   KEY `last_activity_idx` (`last_activity`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
---
--- Volcar la base de datos para la tabla `sessions`
---
-
-INSERT INTO `sessions` (`session_id`, `ip_address`, `user_agent`, `last_activity`, `user_data`) VALUES
-('7da01fd32511b502dfa1f25640e58c71', '127.0.0.1', 'Mozilla/5.0 (X11; Linux i686; rv:5.0) Gecko/20100101 Firefox/5.0', 1313413282, 'a:1:{s:8:"language";s:2:"es";}'),
-('6581979b008acaf9204a9bac7592d867', '127.0.0.1', 'Mozilla/5.0 (X11; Linux i686; rv:6.0) Gecko/20100101 Firefox/6.0', 1313776840, 'a:1:{s:8:"language";s:2:"es";}');
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
